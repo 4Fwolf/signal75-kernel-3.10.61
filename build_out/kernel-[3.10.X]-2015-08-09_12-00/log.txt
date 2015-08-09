@@ -1,0 +1,74 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/inc
+The 4th param is: 
+power_h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/inc
+The 3th param is: 
+md2_eint_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/codegen.dws
+start to parse fig file!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6580/k80/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+start to parse fig file!
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+drivers/misc/mediatek/gpu/mt6580/mali/mali
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+drivers/misc/mediatek/gpu/mt6580/mali/mali
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/usb/gadget/udc-core.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+  LD      drivers/built-in.o
+  LINK    vmlinux
+  LD      vmlinux.o
+  MODPOST vmlinux.o
+  GEN     .version
+  CHK     include/generated/compile.h
+  UPD     include/generated/compile.h
+  CC      init/version.o
+  LD      init/built-in.o
+make: Выход из каталога `/home/iicux/build'
