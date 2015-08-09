@@ -8,7 +8,7 @@ outdir='./build_out'
 project='diablo'
 initram='BOOT-EXTRACTED_lp'
 upddir='Update_lp'
-kernvers='[3.10.X]'
+kernvers='[3.10.61]'
 drv='platform/mt6577/kernel/drivers/gpu'
 module='pvrsrvkm.ko'
 #========================================================================
