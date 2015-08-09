@@ -104,17 +104,17 @@
 
 //__ADB_DEBUG__ start
 // ********************* IICuX changes 09.08.2015 12:48:56 **************
-extern struct usb_ep	*ep_in;
+/*extern struct usb_ep	*ep_in;
 extern struct usb_ep	*ep_out;
 extern int bitdebug_enabled;
 extern unsigned bitdebug_writeCnt;
-extern unsigned bitdebug_readCnt;
+extern unsigned bitdebug_readCnt;*/
 
-/*struct usb_ep *ep_in = NULL;
+struct usb_ep *ep_in = NULL;
 struct usb_ep *ep_out = NULL;
 int bitdebug_enabled;
 unsigned bitdebug_writeCnt = 1;
-unsigned bitdebug_readCnt = 0;*/
+unsigned bitdebug_readCnt = 0;
 // ********************* IICuX changes 09.08.2015 12:48:56 **************
 
 struct amessage {

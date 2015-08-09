@@ -1,0 +1,16 @@
+**** Configuring / /kconfig / ****
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'

@@ -196,12 +196,14 @@ else
       kernel_zimg="${curdir}/arch/arm64/boot/Image.gz-dtb"
     else
       kernel_zimg="${curdir}/arch/arm64/boot/Image.gz"
+    fi
   else
     kernel_img="${curdir}/arch/arm/boot/Image"
     if [ "${MTK_APPENDED_DTB_SUPPORT}" == "yes" ]; then
       kernel_zimg="${curdir}/arch/arm/boot/zImage-dtb"
     else
       kernel_zimg="${curdir}/arch/arm/boot/zImage"
+    fi
   fi
 fi
 
