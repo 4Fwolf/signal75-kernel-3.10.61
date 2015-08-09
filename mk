@@ -5,7 +5,7 @@ toolchaindir='./toolchain/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-'
 mediatek='./drivers/misc/mediatek'
 kitchen='./kitchen'
 outdir='./build_out'
-project='diablo'
+project='signal75'
 initram='BOOT-EXTRACTED_lp'
 upddir='Update_lp'
 kernvers='[3.10.61]'
@@ -17,8 +17,8 @@ module='pvrsrvkm.ko'
 export ARCH=arm
 export CROSS_COMPILE=~/build/toolchain/arm-linux-androideabi-4.7/bin/arm-linux-androideabi-
 #export CROSS_COMPILE=~/build/toolchain/aarch64-linux-android-4.9/bin/aarch64-linux-android-
-export PROJECT=k80
-export TARGET_PRODUCT=k80
+export PROJECT=signal75
+export TARGET_PRODUCT=signal75
 #export CONFIG_INITRAMFS_SOURCE=~/build/boot.img-ramdisk
 #========================================================================
 

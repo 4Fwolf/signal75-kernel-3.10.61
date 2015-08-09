@@ -1,0 +1,56 @@
+**** Configuring / /kconfig / ****
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  SHIPPED scripts/kconfig/zconf.tab.c
+  SHIPPED scripts/kconfig/zconf.lex.c
+  SHIPPED scripts/kconfig/zconf.hash.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+scripts/kconfig/conf --silentoldconfig Kconfig
+*
+* Restart config...
+*
+*
+* RCU Subsystem
+*
+RCU Implementation
+> 1. Preemptible tree-based hierarchical RCU (TREE_PREEMPT_RCU)
+  2. Preemptible UP-only small-memory-footprint RCU (TINY_PREEMPT_RCU) (NEW)
+choice[1-2]: aborted!
+
+Console input/output is redirected. Run 'make oldconfig' to update configuration.
+
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+*
+* Restart config...
+*
+*
+* RCU Subsystem
+*
+RCU Implementation
+> 1. Preemptible tree-based hierarchical RCU (TREE_PREEMPT_RCU)
+  2. Preemptible UP-only small-memory-footprint RCU (TINY_PREEMPT_RCU) (NEW)
+choice[1-2]: aborted!
+
+Console input/output is redirected. Run 'make oldconfig' to update configuration.
+
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+*
+* Restart config...
+*
+*
+* RCU Subsystem
+*
+RCU Implementation
+> 1. Preemptible tree-based hierarchical RCU (TREE_PREEMPT_RCU)
+  2. Preemptible UP-only small-memory-footprint RCU (TINY_PREEMPT_RCU) (NEW)
+choice[1-2]: aborted!
+
+Console input/output is redirected. Run 'make oldconfig' to update configuration.
+
+make: Выход из каталога `/home/iicux/build'

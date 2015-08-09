@@ -4,20 +4,9 @@ ARCH_MTK_PROJECT := $(subst ",,$(CONFIG_ARCH_MTK_PROJECT))
 
 MTK_CUSTOM_PATH  := $(srctree)/drivers/misc/mediatek
 
-ifneq ($(CONFIG_ARM64), y)
-# For arm32, mach folder
-MTK_PLATFORM_PATH_ROOT := $(srctree)/arch/arm/mach-$(MTK_PLATFORM)
-MTK_PROJECT_PATH_ROOT := $(srctree)/arch/arm/mach-$(MTK_PLATFORM)/$(ARCH_MTK_PROJECT)
-	ifneq ($(filter y,$(CONFIG_ARCH_MT6580) $(CONFIG_ARCH_MT6752) $(CONFIG_ARCH_MT6732) $(CONFIG_ARCH_MT6595) $(CONFIG_ARCH_MT6795) $(CONFIG_ARCH_MT6735) $(CONFIG_ARCH_MT6735M) $(CONFIG_ARCH_MT6753)),)
-	# For armv8 32bit
-	MTK_PLATFORM_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)
-	MTK_PROJECT_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)/$(ARCH_MTK_PROJECT)
-	endif
-else
-# For arm64, no mach-xxx folder
+# ********** IICuX 09.08.2015 22:36:09 
 MTK_PLATFORM_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)
 MTK_PROJECT_PATH_ROOT := $(srctree)/drivers/misc/mediatek/mach/$(MTK_PLATFORM)/$(ARCH_MTK_PROJECT)
-endif
 
 ccflags-y += -I$(MTK_PLATFORM_PATH_ROOT)/include \
              -I$(MTK_PLATFORM_PATH_ROOT)/include/mach \
@@ -86,32 +75,10 @@ ccflags-y += -I$(MTK_CUSTOM_PATH)/accdet/$(MTK_PLATFORM) \
              -I$(MTK_CUSTOM_PATH)/lcm/inc \
              -I$(MTK_CUSTOM_PATH)/multibridge/mt8193/inc 
 
-ifeq ($(CONFIG_ARCH_MT6592),y)
-    ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6592/inc
-else
-    ifeq ($(CONFIG_ARCH_MT6582),y)
-        ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6582/inc
-    else
-        ifeq ($(CONFIG_ARCH_MT6752),y)
-	          ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6752/inc
-	          ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6752/lc898122af
-        else
-            ifneq (,$(filter y,$(CONFIG_ARCH_MT6735) $(CONFIG_ARCH_MT6735M) $(CONFIG_ARCH_MT6753)))
-                ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6735/inc
-            else
-                ifeq ($(CONFIG_ARCH_MT6580),y)
-                    ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6580/inc
-                else
-                    ifeq ($(CONFIG_ARCH_MT6795),y)
-                        ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6795/inc
-                    else
-                        ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/common/inc
-                    endif
-                endif
-            endif  
-        endif   
-    endif
-endif
+                # ********** IICuX 09.08.2015 22:36:09 
+                ifeq ($(CONFIG_ARCH_MT6575),y)
+                    ccflags-y += -I$(MTK_CUSTOM_PATH)/lens/mt6575/inc
+                endif    
 
 CUSTOM_KERNEL_FLAGS := $(addprefix -D, $(shell echo \
              $(CONFIG_CUSTOM_KERNEL_FLASHLIGHT) \
@@ -131,10 +98,4 @@ endif
 
 ifeq ($(CONFIG_ARCH_MT6735),y)
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/m4u/$(MTK_PLATFORM)/mt6735/
-endif
-ifeq ($(CONFIG_ARCH_MT6735M),y)
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/m4u/$(MTK_PLATFORM)/mt6735m/
-endif
-ifeq ($(CONFIG_ARCH_MT6753),y)
-ccflags-y += -I$(srctree)/drivers/misc/mediatek/m4u/$(MTK_PLATFORM)/mt6753/
 endif

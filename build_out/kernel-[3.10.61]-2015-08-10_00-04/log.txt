@@ -1,0 +1,72 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+  CC      scripts/mod/devicetable-offsets.s
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTLD  scripts/mod/modpost
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_control.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_connection.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_common.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  CC      drivers/input/touchscreen/mediatek/GT1151/gt1x_generic.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dummy.o
+  CC      drivers/input/touchscreen/mediatek/GT1151/gt1x_tpd.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_routing.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture2.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1_bt.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2_bt.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_hdmi.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0Dl1.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_i2s0_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_uldlloopback.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_bt.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_bt_dai.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_dai_stub.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_dummy.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_63xx.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fmtx.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_tdm_capture.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_hp_impedance.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_machine.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_speaker_63xx.o
+  LD      sound/soc/mediatek/mt_soc_audio_6580/built-in.o
+  LD      sound/soc/mediatek/built-in.o
+  LD      sound/soc/built-in.o
+  LD      sound/built-in.o
+make: Выход из каталога `/home/iicux/build'

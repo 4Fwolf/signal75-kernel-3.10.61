@@ -9,3 +9,4 @@ obj-$(CONFIG_ARCH_MT6752) += v1/
 obj-$(CONFIG_ARCH_MT6795) += v1/
 obj-$(CONFIG_ARCH_MT8163) += v1/
 obj-$(CONFIG_ARCH_MT6580) += v1/
+obj-$(CONFIG_ARCH_MT6575) += v1/

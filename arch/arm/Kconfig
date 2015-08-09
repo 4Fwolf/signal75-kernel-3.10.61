@@ -636,6 +636,19 @@ config ARCH_MSM
 	  stack and controls some vital subsystems
 	  (clock and power control, etc).
 
+config ARCH_MT6575
+        bool "MediaTek MT6575"
+        select GENERIC_TIME
+        select GENERIC_CLOCKEVENTS
+        select ARCH_HAS_CPUFREQ
+        select ARM_AMBA
+        select CPU_V7
+        select ARM_GIC
+        select NEED_MACH_MEMORY_H
+        select MIGHT_HAVE_CACHE_L2X0
+        help
+          This enable support for MediaTek MT6575.
+
 config ARCH_MT6572
 	bool "MediaTek MT6572"
 	select GENERIC_TIME
@@ -819,7 +832,6 @@ config ARCH_MT8163
 	select MTK_ETM
 	help
 	  This enable support for MediaTek MT8163
-
 
 config ARCH_MT6580
     bool "MediaTek MT6580"

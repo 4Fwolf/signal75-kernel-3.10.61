@@ -1,0 +1,41 @@
+**** Configuring / /kconfig / ****
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+  CHK     include/generated/utsrelease.h
+  HOSTCC  scripts/dtc/dtc-parser.tab.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      scripts/mod/devicetable-offsets.s
+  HOSTCC  scripts/mod/modpost.o
+  HOSTCC  scripts/dtc/util.o
+  HOSTLD  scripts/dtc/dtc
+  HOSTCC  scripts/pnmtologo
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  HOSTCC  scripts/bin2c
+  HOSTCC  scripts/recordmcount
+  HOSTCC  scripts/sortextable
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTLD  scripts/mod/modpost
+make: Выход из каталога `/home/iicux/build'

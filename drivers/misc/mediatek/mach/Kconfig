@@ -18,6 +18,13 @@ config MTK_FPGA
 	help
 	  Select if you are using the FPGA board.
 
+config EAGLE75V1
+	bool "EAGLE75V1"
+	depends on (ARCH_MT6575)
+	select ARM_GIC
+	help
+	  Select if you are using an Eagle75v1 phone.
+
 endchoice
 
 config FPGA_CA7

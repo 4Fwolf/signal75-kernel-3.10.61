@@ -55,17 +55,19 @@
 #include "mtk_wcn_cmb_hw.h"
 #include "osal_typedef.h"
 
-#ifdef GPIO_COMBO_BGF_EINT_PIN
+// ********** IICuX 10.08.2015 00:48:21 **********
+//#ifdef GPIO_COMBO_BGF_EINT_PIN
 #define CONFIG_EINT_DEVICE_TREE 1
 
-#if CONFIG_EINT_DEVICE_TREE 1
+//#if CONFIG_EINT_DEVICE_TREE 1
 #include <linux/of.h>
 #include <linux/of_irq.h>
 #include <linux/irqreturn.h>
 
 static UINT32 bfg_irq = 0;
-#endif
-#endif
+//#endif
+//#endif
+// ********** IICuX 10.08.2015 00:48:21 **********
 
 /*******************************************************************************
 *                              C O N S T A N T S

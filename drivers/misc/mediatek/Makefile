@@ -2,17 +2,8 @@
 
 include $(srctree)/drivers/misc/mediatek/Makefile.custom
 
-# For MT6795 FPGA bring-up
-ifeq ($(CONFIG_ARCH_MT6795),y)
-include $(srctree)/drivers/misc/mediatek/Makefile.mt6795
-else
-
-ifneq (,$(filter $(CONFIG_ARCH_MT6735) $(CONFIG_ARCH_MT6735M) $(CONFIG_ARCH_MT6753), y))
-include $(srctree)/drivers/misc/mediatek/Makefile.mt6735
-else
-
-ifneq (,$(filter $(CONFIG_ARCH_MT6580), y))
-include $(srctree)/drivers/misc/mediatek/Makefile.mt6580
+ifneq (,$(filter $(CONFIG_ARCH_MT6575), y))
+include $(srctree)/drivers/misc/mediatek/Makefile.mt6575
 else
 
 ifeq ($(CONFIG_MTK_L2C_SHARE),y)
@@ -285,9 +276,8 @@ obj-$(CONFIG_MTK_IN_HOUSE_TEE_SUPPORT) += trustzone/
 #power-loss-test
 obj-$(CONFIG_PWR_LOSS_MTK_TEST) += power-loss-test/
 
-endif           # end of CONFIG_ARCH_MT6735
-endif		# end of CONFIG_ARCH_MT6795
-endif      # end of CONFIG_ARCH_MT6580
+endif      # end of CONFIG_ARCH_MT6575
+
 ifeq (,$(filter $(CONFIG_MTK_PLATFORM), "mt8163"))
 obj-n   +=  irrx/
 endif

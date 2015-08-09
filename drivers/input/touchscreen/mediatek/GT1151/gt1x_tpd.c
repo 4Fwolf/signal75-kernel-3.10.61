@@ -392,7 +392,7 @@ void gt1x_irq_disable(void)
 
 void gt1x_power_switch(s32 state)
 {
-#ifdef CONFIG_ARCH_MT6580
+#ifdef CONFIG_ARCH_MT6575
 	int ret = 0;
 #endif
 
@@ -410,7 +410,7 @@ void gt1x_power_switch(s32 state)
 		mt_set_gpio_out(GPIO_CTP_EN_PIN, GPIO_OUT_ONE);
 #else // ( defined(MT6575) || defined(MT6577) || defined(MT6589) )
 #ifdef TPD_POWER_SOURCE_CUSTOM
-#ifdef CONFIG_ARCH_MT6580
+#ifdef CONFIG_ARCH_MT6575
 		ret=regulator_set_voltage(tpd->reg, 2800000, 2800000);  // set 2.8v
 		if (ret)
 			GTP_DEBUG("regulator_set_voltage() failed!\n");
@@ -444,7 +444,7 @@ void gt1x_power_switch(s32 state)
 		hwPowerDown(TPD_POWER_SOURCE_1800, "TP");
 #endif
 #ifdef TPD_POWER_SOURCE_CUSTOM
-#ifdef CONFIG_ARCH_MT6580
+#ifdef CONFIG_ARCH_MT6575
 		ret=regulator_disable(tpd->reg); //disable regulator
 		if (ret)
 			GTP_DEBUG("regulator_disable() failed!\n");
@@ -492,7 +492,7 @@ static int tpd_irq_registration(void)
 		}
 		else
 		{
-#ifdef CONFIG_ARCH_MT6580
+#ifdef CONFIG_ARCH_MT6575
 			ret = request_irq(touch_irq, (irq_handler_t)tpd_eint_interrupt_handler, /*EINTF_TRIGGER_FALLING*/IRQF_TRIGGER_LOW, "TOUCH_PANEL-eint", NULL);
 #else
 			ret = request_irq(touch_irq, (irq_handler_t)tpd_eint_interrupt_handler, EINTF_TRIGGER_FALLING, "TOUCH_PANEL-eint", NULL);
@@ -915,7 +915,7 @@ static int tpd_local_init(void)
 
 #ifdef TPD_POWER_SOURCE_CUSTOM
 #ifdef CONFIG_OF_TOUCH
-#ifdef CONFIG_ARCH_MT6580
+#ifdef CONFIG_ARCH_MT6575
 	tpd->reg=regulator_get(tpd->tpd_dev,TPD_POWER_SOURCE_CUSTOM); // get pointer to regulator structure
 	if (IS_ERR(tpd->reg)) {
 		GTP_ERROR("regulator_get() failed!\n");

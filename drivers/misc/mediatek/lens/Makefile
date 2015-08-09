@@ -14,6 +14,11 @@ obj-$(CONFIG_MTK_LENS_DW9814AF_SUPPORT)  += mt6580/dw9814af/
 obj-$(CONFIG_MTK_LENS_DW9714AF_SUPPORT)  += mt6580/dw9714af/
 else
 
+ifeq ($(CONFIG_ARCH_MT6575),y)
+obj-$(CONFIG_MTK_LENS_DW9814AF_SUPPORT)  += mt6575/dw9814af/
+obj-$(CONFIG_MTK_LENS_DW9714AF_SUPPORT)  += mt6575/dw9714af/
+else
+
 ifeq ($(CONFIG_ARCH_MT6592),y)
 obj-$(CONFIG_MTK_LENS_DUMMYLENS_SUPPORT) +=  mt6592/dummy_lens/
 obj-$(CONFIG_MTK_LENS_FM50AF_SUPPORT)    +=  mt6592/fm50af/
@@ -108,6 +113,7 @@ else
             endif
         endif
     endif
+endif
 endif
 
 endif
