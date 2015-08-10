@@ -881,7 +881,9 @@ static MTKLFB_ERROR MTKLFBInitFBDev(MTKLFB_DEVINFO *psDevInfo)
 	{
 		int res;
 
-		res = psLINFBInfo->fbops->fb_open(NULL, psLINFBInfo, 0);
+		// IICuX 10.08.2015 22:17:43 
+		//res = psLINFBInfo->fbops->fb_open(NULL, psLINFBInfo, 0);
+		res = psLINFBInfo->fbops->fb_open(psLINFBInfo, 0);
 		if (res != 0)
 		{
 			xlog_printk(ANDROID_LOG_INFO, DRIVER_PREFIX, DRIVER_PREFIX
@@ -1017,7 +1019,9 @@ static void MTKLFBDeInitFBDev(MTKLFB_DEVINFO *psDevInfo)
 
 	if (psLINFBInfo->fbops->fb_release != NULL) 
 	{
-		(void) psLINFBInfo->fbops->fb_release(NULL, psLINFBInfo, 0);
+		// IICuX 10.08.2015 22:17:43 
+		//(void) psLINFBInfo->fbops->fb_release(NULL, psLINFBInfo, 0);
+		(void) psLINFBInfo->fbops->fb_release(psLINFBInfo, 0);
 	}
 
 	module_put(psLINFBOwner);

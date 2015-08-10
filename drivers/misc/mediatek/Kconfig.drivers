@@ -1590,6 +1590,18 @@ config MTK_GPU_SUPPORT
 	help
 	  Using HW 3D if MTK_GPU_SUPPORT=y, otherwise using SW 3D
 
+config PVR_SGX_MT6575
+	bool "PVR_SGX_MT6575"
+    default y
+	help
+	  SGX531 driver for mt6575.
+
+config PVR_SGX_MT6577
+	bool "PVR_SGX_MT6577"
+    default n
+	help
+	  SGX531 driver for mt6577.
+
 config MTK_ICUSB_SUPPORT
 	bool "MTK_ICUSB_SUPPORT"
 	help

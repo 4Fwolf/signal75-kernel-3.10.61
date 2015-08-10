@@ -1,21 +1,22 @@
+include $(srctree)/drivers/misc/mediatek/Makefile.custom
 OPTIM = -Os
 VER:=user
 
 ccflags-y := \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/include4 \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/include \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/system/include \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/hwdefs \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/bridged \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/bridged/sgx \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/common \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/devices/sgx \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/env/linux \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/srvkm/include \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/3rdparty/mtklfb \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/3rdparty/mtkbc \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/system/mt657X \
-	-I$(MTK_PATH_PLATFORM)/drivers/gpu/pvr/services4/system/mtk_common
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/include4 \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/include \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/include \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/hwdefs \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/bridged \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/bridged/sgx \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/include \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/3rdparty/mtklfb \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/3rdparty/mtkbc \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mt657X \
+	-I$(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mtk_common
 
 ccflags-y += \
 	-fno-strict-aliasing \
@@ -42,7 +43,7 @@ endif
 endif
 
 ccflags-y += \
-	-include $(MTK_PATH_PLATFORM)/drivers/gpu/pvr/include4/config_kernel_$(VER).h
+	-include $(srctree)/drivers/misc/mediatek/gpu/mt6575/SGX/pvr/include4/config_kernel_$(VER).h
 
 pvrsrvkm-y := \
 	services4/srvkm/env/linux/osfunc.o \

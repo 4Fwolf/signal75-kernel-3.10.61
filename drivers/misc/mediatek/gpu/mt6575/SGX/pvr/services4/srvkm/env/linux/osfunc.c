@@ -2137,7 +2137,7 @@ IMG_VOID OSWriteHWReg(IMG_PVOID pvLinRegBaseAddr, IMG_UINT32 ui32Offset, IMG_UIN
 {
 #if !defined(NO_HARDWARE)
     //writel(ui32Value, (IMG_PBYTE)pvLinRegBaseAddr+ui32Offset);
-    mt65xx_reg_sync_writel(ui32Value, (IMG_PBYTE)pvLinRegBaseAddr+ui32Offset);
+    mt_reg_sync_writel(ui32Value, (IMG_PBYTE)pvLinRegBaseAddr+ui32Offset);
 #else
     *(IMG_UINT32 *)((IMG_PBYTE)pvLinRegBaseAddr+ui32Offset) = ui32Value;
 #endif
