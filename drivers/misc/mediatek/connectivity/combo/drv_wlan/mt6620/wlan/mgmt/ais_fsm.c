@@ -1053,7 +1053,7 @@ VOID aisInitializeConnectionSettings(IN P_ADAPTER_T prAdapter, IN P_REG_INFO_T p
 
 	prConnSettings->u2DesiredNonHTRateSet = RATE_SET_ALL_ABG;
 
-	/* prConnSettings->u4FreqInKHz; /* Center frequency */ */
+	/* prConnSettings->u4FreqInKHz; /* Center frequency */
 
 
 	/* Set U-APSD AC */
@@ -2028,7 +2028,7 @@ VOID aisFsmSteps(IN P_ADAPTER_T prAdapter, ENUM_AIS_STATE_T eNextState)
 		case AIS_STATE_WAIT_FOR_NEXT_SCAN:
 
 			DBGLOG(AIS, LOUD,
-			       ("SCAN: Idle Begin - Current Time = %ld\n", kalGetTimeTick()));
+			       ("SCAN: Idle Begin - Current Time = ld\n", kalGetTimeTick()));
 
 			cnmTimerStartTimer(prAdapter,
 					   &prAisFsmInfo->rBGScanTimer,
@@ -2257,7 +2257,7 @@ VOID aisFsmRunEventScanDone(IN P_ADAPTER_T prAdapter, IN P_MSG_HDR_T prMsgHdr)
 	ASSERT(prAdapter);
 	ASSERT(prMsgHdr);
 
-	DBGLOG(AIS, LOUD, ("EVENT-SCAN DONE: Current Time = %ld\n", kalGetTimeTick()));
+	DBGLOG(AIS, LOUD, ("EVENT-SCAN DONE: Current Time = ld\n", kalGetTimeTick()));
 
 	prAisFsmInfo = &(prAdapter->rWifiVar.rAisFsmInfo);
 	prConnSettings = &(prAdapter->rWifiVar.rConnSettings);
@@ -3677,7 +3677,7 @@ VOID aisFsmRunEventBGSleepTimeOut(IN P_ADAPTER_T prAdapter, UINT_32 u4Param)
 	switch (prAisFsmInfo->eCurrentState) {
 	case AIS_STATE_WAIT_FOR_NEXT_SCAN:
 		DBGLOG(AIS, LOUD,
-		       ("EVENT - SCAN TIMER: Idle End - Current Time = %ld\n", kalGetTimeTick()));
+		       ("EVENT - SCAN TIMER: Idle End - Current Time = ld\n", kalGetTimeTick()));
 
 		eNextState = AIS_STATE_LOOKING_FOR;
 

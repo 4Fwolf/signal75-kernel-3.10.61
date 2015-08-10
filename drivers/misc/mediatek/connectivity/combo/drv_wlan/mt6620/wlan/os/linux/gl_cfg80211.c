@@ -747,7 +747,7 @@ mtk_cfg80211_connect(struct wiphy *wiphy,
 		prWepKey->u4KeyIndex = (UINT_32) sme->key_idx;
 		prWepKey->u4KeyIndex |= BIT(31);
 		if (prWepKey->u4KeyLength > 32) {
-			DBGLOG(REQ, WARN, ("Too long key length (%u)\n", prWepKey->u4KeyLength));
+			DBGLOG(REQ, WARN, ("Too long key length (u)\n", prWepKey->u4KeyLength));
 			return -EINVAL;
 		}
 		kalMemCopy(prWepKey->aucKeyMaterial, sme->key, prWepKey->u4KeyLength);

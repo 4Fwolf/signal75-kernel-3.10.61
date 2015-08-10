@@ -3717,11 +3717,11 @@ wlanoidSetPmkid(IN P_ADAPTER_T prAdapter,
 		if (j < CFG_MAX_PMKID_CACHE) {
 			kalMemCopy(prAisSpecBssInfo->arPmkidCache[j].rBssidInfo.arPMKID,
 				   prPmkid->arBSSIDInfo[i].arPMKID, sizeof(PARAM_PMKID_VALUE));
-			DBGLOG(RSN, TRACE, ("Add BSSID " MACSTR " idx=%d PMKID value " MACSTR "\n",
+			/*DBGLOG(RSN, TRACE, ("Add BSSID " MACSTR " idx=(j) PMKID value " MACSTR "\n",
 					    MAC2STR(prAisSpecBssInfo->arPmkidCache[j].rBssidInfo.
 						    arBSSID), j,
 					    MAC2STR(prAisSpecBssInfo->arPmkidCache[j].rBssidInfo.
-						    arPMKID)));
+						    arPMKID)));*/
 			prAisSpecBssInfo->arPmkidCache[j].fgPmkidExist = TRUE;
 		}
 	}
@@ -5445,7 +5445,7 @@ wlanoidSetSwCtrlWrite(IN P_ADAPTER_T prAdapter,
 #if 1				/* CFG_MT6573_SMT_TEST */
 			if (u2SubId == 0x0123) {
 
-				DBGLOG(HAL, INFO, ("set smt fixed rate: %d\n", u4Data));
+				DBGLOG(HAL, INFO, ("set smt fixed rate: (u4Data)\n", u4Data));
 
 				if ((ENUM_REGISTRY_FIXED_RATE_T) (u4Data) < FIXED_RATE_NUM) {
 					prAdapter->rWifiVar.eRateSetting =
@@ -7536,7 +7536,7 @@ wlanoidSetNetworkAddress(IN P_ADAPTER_T prAdapter,
 		prCmdNetworkAddressList->ucAddressCount = (UINT_8) u4IpAddressCount;
 		prNetworkAddress = prNetworkAddressList->arAddress;
 
-		DBGLOG(REQ, INFO, ("u4IpAddressCount (%d)\n", u4IpAddressCount));
+		DBGLOG(REQ, INFO, ("u4IpAddressCount (u4IpAddressCount)\n", u4IpAddressCount));
 
 		for (i = 0, j = 0; i < prNetworkAddressList->u4AddressCount; i++) {
 			if (prNetworkAddress->u2AddressType == PARAM_PROTOCOL_ID_TCP_IP &&
@@ -9884,7 +9884,7 @@ wlanSendMemDumpCmd(IN P_ADAPTER_T prAdapter, IN PVOID pvQueryBuffer, IN UINT_32 
 		prCmdDumpMem->u4RemainLength = u4RemainLeng;
 		prCmdDumpMem->ucFragNum = ucFragNum;
 
-		DBGLOG(REQ, TRACE, ("[%d] 0x%X, len %d, remain len %d\n",
+		DBGLOG(REQ, TRACE, ("[%d] 0x(prCmdDumpMem->u4Address), len (prCmdDumpMem->u4Length), remain len (prCmdDumpMem->u4RemainLength)\n",
 				    ucFragNum,
 				    prCmdDumpMem->u4Address,
 				    prCmdDumpMem->u4Length, prCmdDumpMem->u4RemainLength));
@@ -9943,7 +9943,7 @@ wlanoidQueryMemDump(IN P_ADAPTER_T prAdapter,
 
 	prMemDumpInfo = (P_PARAM_CUSTOM_MEM_DUMP_STRUC_T) pvQueryBuffer;
 	DBGLOG(REQ, TRACE,
-	       ("Dump 0x%X, len %d\n", prMemDumpInfo->u4Address, prMemDumpInfo->u4Length));
+	       ("Dump 0x(prMemDumpInfo->u4Address), len (prMemDumpInfo->u4Length)\n", prMemDumpInfo->u4Address, prMemDumpInfo->u4Length));
 
 	prMemDumpInfo->u4RemainLength = prMemDumpInfo->u4Length;
 	prMemDumpInfo->u4Length = 0;

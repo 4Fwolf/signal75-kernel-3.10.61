@@ -805,7 +805,7 @@ priv_set_int(IN struct net_device *prNetDev,
 	case PRIV_CUSTOM_BWCS_CMD:
 
 		DBGLOG(REQ, INFO,
-		       ("pu4IntBuf[1] = %x, size of PTA_IPC_T = %d.\n", pu4IntBuf[1],
+		       ("pu4IntBuf[1] = x, size of PTA_IPC_T = d.\n", pu4IntBuf[1],
 			sizeof(PARAM_PTA_IPC_T)));
 
 		prPtaIpc = (P_PTA_IPC_T) aucOidBuf;
@@ -836,7 +836,7 @@ priv_set_int(IN struct net_device *prNetDev,
 
 	case PRIV_CMD_BAND_CONFIG:
 		{
-			DBGLOG(INIT, INFO, ("CMD set_band=%u\n", pu4IntBuf[1]));
+			DBGLOG(INIT, INFO, ("CMD set_band=u\n", pu4IntBuf[1]));
 		}
 		break;
 

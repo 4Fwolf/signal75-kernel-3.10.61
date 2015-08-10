@@ -19,7 +19,8 @@
 #include "mt6620_fm_reg.h"
 #include "mt6620_fm.h"
 /* #include "mt6620_drv_dsp.h" */
-/* #include "mt6620_fm_link.h" */
+// ***** IICuX fix10.08.2015 14:12:27 *****
+#include "mt6620_fm_link.h"
 #include "mt6620_fm_lib.h"
 #include "mt6620_fm_cmd.h"
 #include "mt6620_fm_cust_cfg.h"
@@ -1264,7 +1265,7 @@ static fm_s32 mt6620_pre_search(void)
 	mt6620_RampDown();
 	mt6620_Mute(fm_true);
 
-	FM_LOG_NTC(FM_NTC | CHIP, "search threshold: RSSI=%d,de-RSSI=%d,smg=%d %d\n",
+	FM_LOG_NTC(FM_NTC | CHIP, "search threshold: RSSI=d,de-RSSI=d,smg=d d\n",
 		   mt6620_fm_config.rx_cfg.long_ana_rssi_th, mt6620_fm_config.rx_cfg.desene_rssi_th,
 		   mt6620_fm_config.rx_cfg.smg_th);
 	return 0;

@@ -1406,7 +1406,7 @@ VOID nicRxProcessGOBroadcastPkt(IN P_ADAPTER_T prAdapter, IN P_SW_RFB_T prSwRfb)
 		}
 	} else {
 		DBGLOG(RX, WARN,
-		       ("Stop to forward BMC packet due to less free Sw Rfb %u\n",
+		       ("Stop to forward BMC packet due to less free Sw Rfb u\n",
 			prRxCtrl->rFreeSwRfbList.u4NumElem));
 	}
 
@@ -2249,7 +2249,7 @@ VOID nicRxProcessMgmtPacket(IN P_ADAPTER_T prAdapter, IN OUT P_SW_RFB_T prSwRfb)
 			if (u2TxFrameCtrl == MAC_FRAME_BEACON ||
 			    u2TxFrameCtrl == MAC_FRAME_PROBE_RSP) {
 
-				DBGLOG(SW4, INFO, ("QM RX MGT: net %u sta idx %u wlan idx %u ssn %u ptype %u subtype %u 11 %u\n", HIF_RX_HDR_GET_NETWORK_IDX(prHifRxHdr), prHifRxHdr->ucStaRecIdx, prSwRfb->ucWlanIdx, HIF_RX_HDR_GET_SN(prHifRxHdr),	/* The new SN of the frame */
+				DBGLOG(SW4, INFO, ("QM RX MGT: net=u sta idx=u wlan idx=u ssn=u ptype=u subtype=u 11=u\n", HIF_RX_HDR_GET_NETWORK_IDX(prHifRxHdr), prHifRxHdr->ucStaRecIdx, prSwRfb->ucWlanIdx, HIF_RX_HDR_GET_SN(prHifRxHdr),	/* The new SN of the frame */
 						   prSwRfb->ucPacketType,
 						   ucSubtype,
 						   HIF_RX_HDR_GET_80211_FLAG(prHifRxHdr)));
@@ -2595,13 +2595,13 @@ nicRxEnhanceReadBuffer(IN P_ADAPTER_T prAdapter,
 
 		/* 4 <2> if the RFB dw size or packet size is zero */
 		if (u4PktLen == 0) {
-			DBGLOG(RX, ERROR, ("Packet Length = %d\n", u4PktLen));
+			DBGLOG(RX, ERROR, ("Packet Length = d\n", u4PktLen));
 			ASSERT(0);
 			break;
 		}
 		/* 4 <3> if the packet is too large or too small */
 		if (u4PktLen > CFG_RX_MAX_PKT_SIZE) {
-			DBGLOG(RX, TRACE, ("Read RX Packet Lentgh Error (%d)\n", u4PktLen));
+			DBGLOG(RX, TRACE, ("Read RX Packet Lentgh Error (d)\n", u4PktLen));
 			ASSERT(0);
 			break;
 		}
@@ -3103,7 +3103,7 @@ VOID nicRxQueryStatus(IN P_ADAPTER_T prAdapter, IN PUINT_8 pucBuffer, OUT PUINT_
 	prRxCtrl = &prAdapter->rRxCtrl;
 	ASSERT(prRxCtrl);
 
-	/* if (pucBuffer) {} /* For Windows, we'll print directly instead of sprintf() */ */
+	/* if (pucBuffer) {} /* For Windows, we'll print directly instead of sprintf() */ 
 	ASSERT(pu4Count);
 
 	SPRINTF(pucCurrBuf, ("\n\nRX CTRL STATUS:"));
@@ -3164,7 +3164,7 @@ VOID nicRxQueryStatistics(IN P_ADAPTER_T prAdapter, IN PUINT_8 pucBuffer, OUT PU
 	prRxCtrl = &prAdapter->rRxCtrl;
 	ASSERT(prRxCtrl);
 
-	/* if (pucBuffer) {} /* For Windows, we'll print directly instead of sprintf() */ */
+	/* if (pucBuffer) {} /* For Windows, we'll print directly instead of sprintf() */ 
 	ASSERT(pu4Count);
 
 #define SPRINTF_RX_COUNTER(eCounter) \
@@ -3240,7 +3240,7 @@ nicRxWaitResponse(IN P_ADAPTER_T prAdapter,
 			u4PktLen = (u4Value >> 16) & 0xFFFF;
 		}
 
-		DBGLOG(RX, TRACE, ("i = %d, u4PktLen = %d\n", i, u4PktLen));
+		DBGLOG(RX, TRACE, ("i = d, u4PktLen = d\n", i, u4PktLen));
 
 		if (u4PktLen == 0) {
 			/* timeout exceeding check */
@@ -3259,7 +3259,7 @@ nicRxWaitResponse(IN P_ADAPTER_T prAdapter,
 			i++;
 		} else if (u4PktLen > u4MaxRespBufferLen) {
 			DBGLOG(RX, WARN,
-			       ("Not enough Event Buffer: required length = 0x%x, available buffer length = %d\n",
+			       ("Not enough Event Buffer: required length = 0xx, available buffer length = d\n",
 				u4PktLen, u4MaxRespBufferLen));
 
 			return WLAN_STATUS_FAILURE;
@@ -3274,7 +3274,7 @@ nicRxWaitResponse(IN P_ADAPTER_T prAdapter,
 				return WLAN_STATUS_FAILURE;
 			}
 
-			DBGLOG(RX, TRACE, ("Dump Response buffer, length = 0x%x\n", u4PktLen));
+			DBGLOG(RX, TRACE, ("Dump Response buffer, length = 0xx\n", u4PktLen));
 			DBGLOG_MEM8(RX, TRACE, pucRspBuffer, u4PktLen);
 
 			*pu4Length = u4PktLen;

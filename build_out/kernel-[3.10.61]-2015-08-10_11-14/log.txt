@@ -1,0 +1,272 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+kpd_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+eint_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+gpio_boot_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+Start to generate cust_eint.h...
+Gen cust_eint.h successfully!
+start to parse fig file!
+Start to generate cust_kpd.h...
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+gpio_usage_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+Gen cust_kpd.h successfully
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+adc_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+start to gen gpio boot.h...
+Gen cust_gpio_boot.h successfully!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+start to parse fig file!
+Start to generate cust_adc.h...
+Gen cust_adc.h successfully
+start to gen gpio usage.h...
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+pmic_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+pmic_c
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+Gen cust_gpio_boot.h successfully!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+md1_eint_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+Start to generate pimc_drv.h...
+Gen pimc_drv.h successfully!
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+start to parse fig file!
+Start to generate pmic_drv.c...
+Gen pmic_drv.c successfully!
+start to parse fig file!
+  HOSTLD  scripts/mod/modpost
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_control.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_connection.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_common.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture.o
+  LD      drivers/input/touchscreen/mediatek/built-in.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dummy.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/accdet/accdet_drv.o
+  CC      drivers/misc/mediatek/accdet/mt6575/accdet.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_routing.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture2.o
+  LD      drivers/misc/mediatek/accdet/mt6575/built-in.o
+  LD      drivers/misc/mediatek/accdet/built-in.o
+  CC      drivers/misc/mediatek/accelerometer/accel.o
+  CC      drivers/misc/mediatek/accelerometer/accel_factory.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1.o
+  LD      drivers/misc/mediatek/accelerometer/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2.o
+  CC      drivers/misc/mediatek/alsps/alsps.o
+  CC      drivers/scsi/scsi.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1_bt.o
+  CC      drivers/misc/mediatek/alsps/alsps_factory.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2_bt.o
+  CC      drivers/scsi/hosts.o
+  CC      drivers/misc/mediatek/alsps/aal_control.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_hdmi.o
+  CC      drivers/misc/mediatek/alsps/cm36652-new/cm36652.o
+  CC      drivers/scsi/scsi_ioctl.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0.o
+  CC      drivers/scsi/constants.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0Dl1.o
+  LD      drivers/misc/mediatek/alsps/cm36652-new/built-in.o
+  LD      drivers/misc/mediatek/alsps/built-in.o
+  CC      drivers/misc/mediatek/auxadc/mt_auxadc.o
+  CC      drivers/scsi/scsicam.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_i2s0_awb.o
+  CC      drivers/scsi/scsi_error.o
+  CC      drivers/misc/mediatek/auxadc/mt6575/mt_auxadc_hal.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_uldlloopback.o
+  LD      drivers/misc/mediatek/auxadc/mt6575/built-in.o
+  LD      drivers/misc/mediatek/auxadc/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_alps.o
+  CC      drivers/scsi/scsi_lib.o
+  CC      drivers/scsi/scsi_lib_dma.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s.o
+  CC      drivers/scsi/scsi_scan.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s_awb.o
+  CC      drivers/scsi/scsi_sysfs.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_awb.o
+  CC      drivers/scsi/scsi_devinfo.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_bt.o
+  CC      drivers/scsi/scsi_sysctl.o
+  CC      drivers/scsi/scsi_proc.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_bt_dai.o
+  CC      drivers/scsi/scsi_trace.o
+  CC      drivers/scsi/scsi_pm.o
+  CC      drivers/scsi/sd.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_dai_stub.o
+  LD      drivers/scsi/arm/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_dummy.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_63xx.o
+  LD      drivers/scsi/scsi_mod.o
+  LD      drivers/scsi/sd_mod.o
+  LD      drivers/scsi/built-in.o
+make: Выход из каталога `/home/iicux/build'

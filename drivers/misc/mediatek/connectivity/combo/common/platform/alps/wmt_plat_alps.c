@@ -257,7 +257,9 @@ INT32 wmt_plat_audio_ctrl(CMB_STUB_AIF_X state, CMB_STUB_AIF_CTRL ctrl)
 }
 
 #ifdef GPIO_COMBO_BGF_EINT_PIN
-irqreturn_t wmt_plat_bgf_eirq_cb (int irq, void *data)
+// *********** IICuX fix 10.08.2015 10:43:55 **********
+//irqreturn_t wmt_plat_bgf_eirq_cb (int irq, void *data)
+static VOID wmt_plat_bgf_eirq_cb (VOID)
 {
 #if CFG_WMT_PS_SUPPORT
 /* #error "need to disable EINT here" */
@@ -339,7 +341,6 @@ INT32 wmt_plat_irq_ctrl(ENUM_FUNC_STATE state)
 {
 	return -1;
 }
-
 
 static INT32 wmt_plat_dump_pin_conf(VOID)
 {

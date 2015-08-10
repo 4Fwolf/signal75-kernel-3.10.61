@@ -23,7 +23,8 @@
 
 #ifndef __MT6620_FM_LINK_H__
 #define __MT6620_FM_LINK_H__
-#if 0
+// ***** IICuX fix10.08.2015 14:12:27 *****
+//#if 0
 #include <linux/wait.h>
 #include "fm_link.h"
 
@@ -33,6 +34,7 @@
 #define SW_RETRY_CNT            (2)
 #define SW_RETRY_CNT_MAX        (5)
 #define SW_WAIT_TIMEOUT_MAX     (100)
+#define SM_TUNE_TIMEOUT         (6)
 
 /* FM operation timeout define for error handle */
 #define TEST_TIMEOUT            (3)
@@ -70,5 +72,5 @@ struct fm_link_event {
 	 fm_u32(*get) (struct fm_link_event *thiz);
 	 fm_u32(*rst) (struct fm_link_event *thiz);
 };
-#endif
+//#endif
 #endif

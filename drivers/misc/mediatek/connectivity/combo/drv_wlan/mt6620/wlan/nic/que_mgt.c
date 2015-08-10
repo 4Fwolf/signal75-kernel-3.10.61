@@ -754,7 +754,7 @@ VOID qmActivateStaRec(IN P_ADAPTER_T prAdapter, IN P_STA_RECORD_T prStaRec)
 	}
 #endif
 
-	DBGLOG(QM, INFO, ("QM: +STA[%ld]\n", prStaRec->ucIndex));
+	DBGLOG(QM, INFO, ("QM: +STA[ld]\n", prStaRec->ucIndex));
 }
 
 /*----------------------------------------------------------------------------*/
@@ -1378,7 +1378,7 @@ P_MSDU_INFO_T qmEnqueueTxPackets(IN P_ADAPTER_T prAdapter, IN P_MSDU_INFO_T prMs
 		}
 #endif
 
-		DBGLOG(QM, LOUD, ("Current queue length = %u\n", prTxQue->u4NumElem));
+		DBGLOG(QM, LOUD, ("Current queue length = u\n", prTxQue->u4NumElem));
 	} while (prNextMsduInfo);
 
 	if (QUEUE_IS_NOT_EMPTY(&rNotEnqueuedQue)) {
@@ -1512,7 +1512,7 @@ qmDequeueTxPacketsFromPerStaQueues(IN P_ADAPTER_T prAdapter,
 	pu4HeadStaRecIndex = &(prQM->au4HeadStaRecIndex[ucTC]);
 	pu4HeadStaRecForwardCount = &(prQM->au4ForwardCount[ucTC]);
 
-	DBGLOG(QM, LOUD, ("(Fairness) TID = %u Init Head STA = %u Resource = %u\n",
+	DBGLOG(QM, LOUD, ("(Fairness) TID = u Init Head STA = u Resource = u\n",
 			  ucTC, *pu4HeadStaRecIndex, u4Resource));
 
 
@@ -2067,7 +2067,7 @@ P_MSDU_INFO_T qmDequeueTxPackets(IN P_ADAPTER_T prAdapter, IN P_TX_TCQ_STATUS_T 
 
 	/* TC0 to TC4: AC0~AC3, 802.1x (commands packets are not handled by QM) */
 	for (i = TC4_INDEX; i >= TC0_INDEX; i--) {
-		DBGLOG(QM, LOUD, ("Dequeue packets from Per-STA queue[%u]\n", i));
+		DBGLOG(QM, LOUD, ("Dequeue packets from Per-STA queue[u]\n", i));
 
 		qmDequeueTxPacketsFromPerStaQueues(prAdapter,
 						   &rReturnedQue,
@@ -2077,7 +2077,7 @@ P_MSDU_INFO_T qmDequeueTxPackets(IN P_ADAPTER_T prAdapter, IN P_TX_TCQ_STATUS_T 
 		    );
 
 		/* The aggregate number of dequeued packets */
-		DBGLOG(QM, LOUD, ("DQA)[%u](%lu)\n", i, rReturnedQue.u4NumElem));
+		DBGLOG(QM, LOUD, ("DQA)[u](lu)\n", i, rReturnedQue.u4NumElem));
 	}
 
 
@@ -2088,7 +2088,7 @@ P_MSDU_INFO_T qmDequeueTxPackets(IN P_ADAPTER_T prAdapter, IN P_TX_TCQ_STATUS_T 
 	    );
 
 	DBGLOG(QM, LOUD,
-	       ("Current total number of dequeued packets = %u\n", rReturnedQue.u4NumElem));
+	       ("Current total number of dequeued packets = u\n", rReturnedQue.u4NumElem));
 
 	if (QUEUE_IS_NOT_EMPTY(&rReturnedQue)) {
 		prReturnedPacketListHead = (P_MSDU_INFO_T) QUEUE_GET_HEAD(&rReturnedQue);
@@ -2201,7 +2201,7 @@ VOID qmUpdateAverageTxQueLen(IN P_ADAPTER_T prAdapter)
 	P_STA_RECORD_T prStaRec;
 	P_QUE_MGT_T prQM = &prAdapter->rQM;
 
-	/* 4 <1> Update the queue lengths for TC0 to TC3 (skip TC4) and TC5 */ */
+	/* 4 <1> Update the queue lengths for TC0 to TC3 (skip TC4) and TC5 */
 	for (i = 0; i < NUM_OF_PER_STA_TX_QUEUES - 1; i++) {
 		u4CurrQueLen = 0;
 
@@ -2551,7 +2551,7 @@ P_SW_RFB_T qmHandleRxPackets(IN P_ADAPTER_T prAdapter, IN P_SW_RFB_T prSwRfbList
 		/* Decide the Destination */
 #if CFG_RX_PKTS_DUMP
 		if (prAdapter->rRxCtrl.u4RxPktsDumpTypeMask & BIT(HIF_RX_PKT_TYPE_DATA)) {
-			DBGLOG(SW4, INFO, ("QM RX DATA: net %u sta idx %u wlan idx %u ssn %u tid %u ptype %u 11 %u\n", HIF_RX_HDR_GET_NETWORK_IDX(prHifRxHdr), prHifRxHdr->ucStaRecIdx, prCurrSwRfb->ucWlanIdx, HIF_RX_HDR_GET_SN(prHifRxHdr),	/* The new SN of the frame */
+			DBGLOG(SW4, INFO, ("QM RX DATA: net=u sta idx=u wlan idx=u ssn=u tid=u ptype=u 11 =u\n", HIF_RX_HDR_GET_NETWORK_IDX(prHifRxHdr), prHifRxHdr->ucStaRecIdx, prCurrSwRfb->ucWlanIdx, HIF_RX_HDR_GET_SN(prHifRxHdr),	/* The new SN of the frame */
 					   HIF_RX_HDR_GET_TID(prHifRxHdr),
 					   prCurrSwRfb->ucPacketType,
 					   HIF_RX_HDR_GET_80211_FLAG(prHifRxHdr)));

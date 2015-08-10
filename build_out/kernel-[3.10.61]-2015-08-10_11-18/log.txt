@@ -1,0 +1,94 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+md1_eint_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+  CC      scripts/mod/devicetable-offsets.s
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+start to parse fig file!
+start to parse fig file!
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CALL    scripts/checksyscalls.sh
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_alps.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/wmt_detect_pwr.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/conn_drv_init.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/common_drv_init.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/bluetooth_drv_init.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/gps_drv_init.o
+  CC      drivers/misc/mediatek/eint/eint_drv.o
+  CC      drivers/misc/mediatek/eint/mt6575/eint.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/fm_drv_init.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/kd_flashlightlist.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid2_part1.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/drv_init/wlan_drv_init.o
+  LD      drivers/misc/mediatek/connectivity/common_detect/drv_init/built-in.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid2_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid2_part1.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid2_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/sub_strobe.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid1_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_part_id.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid1_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/constant_flashlight/leds_strobe.o
+  CC      drivers/tty/tty_io.o
+  CC      drivers/tty/n_tty.o
+  CC      drivers/tty/tty_ioctl.o
+  CC      drivers/tty/tty_ldisc.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/tty/tty_port.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/tty/tty_ldsem.o
+  CC      drivers/tty/pty.o
+  CC      drivers/tty/sysrq.o
+  LD      drivers/tty/ipwireless/built-in.o
+  CC      drivers/tty/serial/serial_core.o
+  LD      drivers/tty/vt/built-in.o
+  CC      drivers/tty/serial/kgdboc.o
+  LD      drivers/tty/serial/built-in.o
+  LD      drivers/tty/built-in.o
+make: Выход из каталога `/home/iicux/build'

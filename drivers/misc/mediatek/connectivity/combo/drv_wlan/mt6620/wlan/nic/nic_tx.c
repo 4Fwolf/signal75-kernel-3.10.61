@@ -657,7 +657,7 @@ BOOLEAN nicTxReleaseResource(IN P_ADAPTER_T prAdapter, IN UINT_8 * aucTxRlsCnt)
 			prTxCtrl->rTc.aucFreeBufferCount[i] += aucTxRlsCnt[i];
 
 			if ((i == 1) || (i == 5)) {
-				DBGLOG(TX, EVENT, ("Release: i = %d aucFreeBufferCount = %d\n",
+				DBGLOG(TX, EVENT, ("Release: i = d aucFreeBufferCount = d\n",
 						   i, prTxCtrl->rTc.aucFreeBufferCount[i]));
 			}
 		}

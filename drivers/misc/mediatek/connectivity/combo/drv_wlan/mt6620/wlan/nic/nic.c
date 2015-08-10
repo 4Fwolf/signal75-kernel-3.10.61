@@ -794,8 +794,7 @@ WLAN_STATUS nicAllocateAdapterMemory(IN P_ADAPTER_T prAdapter)
 
 		if (prAdapter->prSDIOCtrl == NULL) {
 			DBGLOG(INIT, ERROR,
-			       ("Could not allocate %ld bytes for interrupt response.\n",
-				sizeof(ENHANCE_MODE_DATA_STRUCT_T)));
+			       ("Could not allocate bytes for interrupt response.\n"));
 			break;
 		}
 
@@ -1073,7 +1072,7 @@ WLAN_STATUS nicProcessIST(IN P_ADAPTER_T prAdapter)
 		/* DBGLOG(INIT, TRACE, ("u4IntStatus: 0x%x\n", u4IntStatus)); */
 
 		if (u4IntStatus & ~(WHIER_DEFAULT | WHIER_FW_OWN_BACK_INT_EN)) {
-			DBGLOG(INTR, WARN, ("Un-handled HISR %#x, HISR = %#x (HIER:0x%x)\n",
+			DBGLOG(INTR, WARN, ("Un-handled HISR, HISR = #x (HIER:0xx)\n",
 					    (u4IntStatus & ~WHIER_DEFAULT), u4IntStatus,
 					    WHIER_DEFAULT));
 			u4IntStatus &= WHIER_DEFAULT;
@@ -1131,7 +1130,7 @@ WLAN_STATUS nicProcessIST_impl(IN P_ADAPTER_T prAdapter, IN UINT_32 u4IntStatus)
 				apfnEventFuncTable[prIntEventMap->u4Event] (prAdapter);
 			} else {
 				DBGLOG(INTR, WARN,
-				       ("Empty INTR handler! ISAR bit#: %ld, event:%d, func: 0x%x\n",
+				       ("Empty INTR handler! ISAR bit#: ld, event:d, func: 0xx\n",
 					prIntEventMap->u4Int, prIntEventMap->u4Event,
 					apfnEventFuncTable[prIntEventMap->u4Event]));
 
@@ -1164,8 +1163,8 @@ BOOL nicVerifyChipID(IN P_ADAPTER_T prAdapter)
 
 	HAL_MCR_RD(prAdapter, MCR_WCIR, &u4CIR);
 
-	DBGLOG(INIT, TRACE, ("Chip ID: 0x%x\n", u4CIR & WCIR_CHIP_ID));
-	DBGLOG(INIT, TRACE, ("Revision ID: 0x%x\n", ((u4CIR & WCIR_REVISION_ID) >> 16)));
+	DBGLOG(INIT, TRACE, ("Chip ID: 0xx\n", u4CIR & WCIR_CHIP_ID));
+	DBGLOG(INIT, TRACE, ("Revision ID: 0xx\n", ((u4CIR & WCIR_REVISION_ID) >> 16)));
 
 	if ((u4CIR & WCIR_CHIP_ID) != MTK_CHIP_REV) {
 		return FALSE;
@@ -1287,7 +1286,7 @@ VOID nicProcessAbnormalInterrupt(IN P_ADAPTER_T prAdapter)
 	UINT_32 u4Value;
 
 	HAL_MCR_RD(prAdapter, MCR_WASR, &u4Value);
-	DBGLOG(REQ, WARN, ("MCR_WASR: 0x%x\n", u4Value));
+	DBGLOG(REQ, WARN, ("MCR_WASR: 0xx\n", u4Value));
 }
 
 /*----------------------------------------------------------------------------*/
@@ -1347,7 +1346,7 @@ VOID nicProcessSoftwareInterrupt(IN P_ADAPTER_T prAdapter)
 	}
 #endif
 
-	DBGLOG(REQ, WARN, ("u4IntrBits: 0x%x\n", u4IntrBits));
+	DBGLOG(REQ, WARN, ("u4IntrBits: 0xx\n", u4IntrBits));
 
 	return;
 }				/* end of nicProcessSoftwareInterrupt() */
@@ -3775,7 +3774,7 @@ nicRlmArUpdateParms(IN P_ADAPTER_T prAdapter,
 
 
 	DBGLOG(INIT, INFO,
-	       ("ArParam %u %u %u %u\n", u4ArSysParam0, u4ArSysParam1, u4ArSysParam2,
+	       ("ArParam \n", u4ArSysParam0, u4ArSysParam1, u4ArSysParam2,
 		u4ArSysParam3));
 	DBGLOG(INIT, INFO, ("ArVer %u AbwVer %u AgiVer %u\n", ucArVer, ucAbwVer, ucAgiVer));
 	DBGLOG(INIT, INFO, ("HtMask %x LegacyMask %x\n", u2HtClrMask, u2LegacyClrMask));

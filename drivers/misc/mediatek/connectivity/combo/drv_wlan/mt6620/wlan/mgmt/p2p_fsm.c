@@ -1022,7 +1022,7 @@ VOID p2pFsmUninit(IN P_ADAPTER_T prAdapter)
 
 		/* Release all pending CMD queue. */
 		DBGLOG(P2P, TRACE,
-		       ("p2pFsmUninit: wlanProcessCommandQueue, num of element:%d\n",
+		       ("p2pFsmUninit: wlanProcessCommandQueue, num of element:d\n",
 			prAdapter->prGlueInfo->rCmdQueue.u4NumElem));
 		wlanProcessCommandQueue(prAdapter, &prAdapter->prGlueInfo->rCmdQueue);
 
@@ -2962,7 +2962,7 @@ VOID p2pFsmRunEventWfdSettingUpdate(IN P_ADAPTER_T prAdapter, IN P_MSG_HDR_T prM
 			prWfdCfgSettings = &prAdapter->rWifiVar.prP2pFsmInfo->rWfdConfigureSettings;
 		}
 
-		DBGLOG(P2P, INFO, ("WFD Enalbe %x info %x state %x flag %x adv %x\n",
+		DBGLOG(P2P, INFO, ("WFD Enalbe =x info =x state =x flag =x adv =x\n",
 				   prWfdCfgSettings->ucWfdEnable,
 				   prWfdCfgSettings->u2WfdDevInfo,
 				   prWfdCfgSettings->u4WfdState,

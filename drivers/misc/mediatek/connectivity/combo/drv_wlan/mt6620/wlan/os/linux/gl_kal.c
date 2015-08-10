@@ -1949,7 +1949,7 @@ VOID kalSendCompleteAndAwakeQueue(IN P_GLUE_INFO_T prGlueInfo, IN PVOID pvPacket
 
 	dev_kfree_skb((struct sk_buff *)pvPacket);
 
-	DBGLOG(TX, EVENT, ("----- pending frame %d -----\n", prGlueInfo->i4TxPendingFrameNum));
+	DBGLOG(TX, EVENT, ("----- pending frame=d -----\n", prGlueInfo->i4TxPendingFrameNum));
 
 	return;
 }
@@ -2050,7 +2050,7 @@ kalQoSFrameClassifierAndPacketInfo(IN P_GLUE_INFO_T prGlueInfo,
 	u4PacketLen = prSkb->len;
 
 	if (u4PacketLen < ETH_HLEN) {
-		DBGLOG(INIT, WARN, ("Invalid Ether packet length: %d\n", u4PacketLen));
+		DBGLOG(INIT, WARN, ("Invalid Ether packet length: d\n", u4PacketLen));
 		return FALSE;
 	}
 
@@ -3697,7 +3697,9 @@ kalIndicateBssInfo(IN P_GLUE_INFO_T prGlueInfo,
 		if (!bss) {
 			DBGLOG(REQ, WARN, ("cfg80211_inform_bss_frame() returned with NULL\n"));
 		} else {
-			cfg80211_put_bss(bss);
+			// ***** IICuX fix 10.08.2015 13:33:13 *****
+			//cfg80211_put_bss(bss);
+			cfg80211_put_bss(wiphy, bss);
 		}
 	}
 

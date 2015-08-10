@@ -2338,7 +2338,7 @@ scanSearchBssDescByPolicy(IN P_ADAPTER_T prAdapter, IN ENUM_NETWORK_TYPE_INDEX_T
 	}
 #endif
 
-	DBGLOG(SCN, INFO, ("SEARCH: Num Of BSS_DESC_T = %d, Look for SSID: %s\n",
+	DBGLOG(SCN, INFO, ("SEARCH: Num Of BSS_DESC_T = d, Look for SSID: s\n",
 			   prBSSDescList->u4NumElem, prConnSettings->aucSSID));
 
 

@@ -745,7 +745,7 @@ saaFsmRunEventTxDone(IN P_ADAPTER_T prAdapter,
 
 	ASSERT(prStaRec);
 
-	DBGLOG(SAA, LOUD, ("EVENT-TX DONE: Current Time = %ld\n", kalGetTimeTick()));
+	DBGLOG(SAA, LOUD, ("EVENT-TX DONE: Current Time = ld\n", kalGetTimeTick()));
 
 	eNextState = prStaRec->eAuthAssocState;
 
@@ -871,7 +871,7 @@ VOID saaFsmRunEventTxReqTimeOut(IN P_ADAPTER_T prAdapter, IN P_STA_RECORD_T prSt
 		return;
 	}
 
-	DBGLOG(SAA, LOUD, ("EVENT-TIMER: TX REQ TIMEOUT, Current Time = %ld\n", kalGetTimeTick()));
+	DBGLOG(SAA, LOUD, ("EVENT-TIMER: TX REQ TIMEOUT, Current Time = ld\n", kalGetTimeTick()));
 
 	switch (prStaRec->eAuthAssocState) {
 	case SAA_STATE_SEND_AUTH1:
@@ -902,7 +902,7 @@ VOID saaFsmRunEventRxRespTimeOut(IN P_ADAPTER_T prAdapter, IN P_STA_RECORD_T prS
 	ENUM_AA_STATE_T eNextState;
 
 
-	DBGLOG(SAA, LOUD, ("EVENT-TIMER: RX RESP TIMEOUT, Current Time = %ld\n", kalGetTimeTick()));
+	DBGLOG(SAA, LOUD, ("EVENT-TIMER: RX RESP TIMEOUT, Current Time = ld\n", kalGetTimeTick()));
 
 	ASSERT(prStaRec);
 	if (!prStaRec) {
@@ -1809,7 +1809,7 @@ VOID joinComplete(IN P_ADAPTER_T prAdapter)
 
 
 	/* 4 <3.G> Save the available Auth Types during Roaming (Design for Fast BSS Transition). */
-	/* if (prAdapter->fgIsEnableRoaming) /* NOTE(Kevin): Always prepare info for roaming */ */
+	/* if (prAdapter->fgIsEnableRoaming) /* NOTE(Kevin): Always prepare info for roaming */
 	{
 
 		if (prJoinInfo->ucCurrAuthAlgNum == AUTH_ALGORITHM_NUM_OPEN_SYSTEM) {

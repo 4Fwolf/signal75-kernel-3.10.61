@@ -1,0 +1,127 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+md1_eint_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+start to parse fig file!
+start to parse fig file!
+  HOSTLD  scripts/mod/modpost
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_63xx.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_core.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/wmt_detect_pwr.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_func.o
+  LD      drivers/misc/mediatek/dramc/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/core/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_pwm.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_alps.o
+  CC      drivers/misc/mediatek/dual_ccci/mt6575/src/ccci_platform.o
+  CC      drivers/misc/mediatek/dual_ccci/mt6575/src/ccci_settings.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dsi.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_init.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_hw.o
+  LD      drivers/misc/mediatek/dual_ccci/mt6575/ccci_plat.o
+  LD      drivers/misc/mediatek/dual_ccci/mt6575/built-in.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_logical.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_md_main.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_chrdev.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_tty.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_ipc.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_fs_main.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_rpc_main.o
+  CC      drivers/misc/mediatek/dual_ccci/ccmni_net.o
+  CC      drivers/spi/spi.o
+  CC      drivers/misc/mediatek/dual_ccci/ccmni_v2_net.o
+  LD      drivers/spi/built-in.o
+  CC      drivers/staging/staging.o
+  CC      drivers/staging/android/ion/ion.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/display_recorder.o
+  CC      drivers/misc/mediatek/dual_ccci/ccmni.o
+  CC      drivers/misc/mediatek/dual_ccci/ccmni_pfp.o
+  LD      drivers/misc/mediatek/dispsys/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dispsys/built-in.o
+  CC      drivers/switch/switch_class.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_mk_node.o
+  CC      drivers/staging/android/ion/ion_heap.o
+  LD      drivers/switch/built-in.o
+  CC      drivers/staging/android/ion/ion_page_pool.o
+  CC      drivers/staging/android/ion/ion_system_heap.o
+  CC      drivers/staging/android/ashmem.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_statistics.o
+  CC      drivers/staging/android/ion/ion_carveout_heap.o
+  LD      drivers/staging/media/built-in.o
+  CC      drivers/thermal/thermal_core.o
+  LD      drivers/misc/mediatek/dual_ccci/ccci.o
+  LD      drivers/misc/mediatek/dual_ccci/built-in.o
+  CC      drivers/thermal/backward_compatible.o
+  CC      drivers/staging/android/ion/ion_chunk_heap.o
+  CC      drivers/staging/android/logger.o
+  CC      drivers/staging/android/ion/ion_cma_heap.o
+  CC      drivers/staging/android/ion/ion_debug.o
+  CC      drivers/staging/android/timed_output.o
+  LD      drivers/thermal/thermal_sys.o
+  LD      drivers/thermal/built-in.o
+  CC      drivers/staging/android/lowmemorykiller.o
+  CC      drivers/staging/android/ion/ion_profile.o
+  CC      drivers/staging/android/ion/mtk/ion_drv.o
+  CC      drivers/staging/android/sync.o
+  CC      drivers/staging/android/ion/mtk/ion_mm_heap.o
+  CC      drivers/staging/android/ion/mtk/ion_fb_heap.o
+  CC      drivers/staging/android/sw_sync.o
+  LD      drivers/staging/android/ion/mtk/built-in.o
+  LD      drivers/staging/android/ion/built-in.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+make: Выход из каталога `/home/iicux/build'

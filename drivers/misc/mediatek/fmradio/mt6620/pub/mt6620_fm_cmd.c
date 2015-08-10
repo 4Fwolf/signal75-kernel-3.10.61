@@ -8,7 +8,8 @@
 #include "fm_link.h"
 
 #include "mt6620_fm_reg.h"
-/* #include "mt6620_fm_link.h" */
+// ***** IICuX fix10.08.2015 14:12:27 *****
+#include "mt6620_fm_link.h"
 #include "mt6620_fm.h"
 #include "mt6620_fm_cmd.h"
 #include "mt6620_fm_cust_cfg.h"

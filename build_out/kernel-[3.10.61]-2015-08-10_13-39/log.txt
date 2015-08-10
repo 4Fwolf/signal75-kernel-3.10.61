@@ -1,0 +1,53 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/connectivity/combo/drv_wlan/mt6620/wlan/os/linux/gl_cfg80211.o
+  CC      drivers/misc/mediatek/connectivity/combo/drv_wlan/mt6620/wlan/os/linux/platform.o
+  CC      drivers/misc/mediatek/connectivity/combo/drv_wlan/mt6620/wlan/os/linux/gl_p2p_cfg80211.o
+  CC      drivers/misc/mediatek/connectivity/combo/drv_wlan/mt6620/wlan/os/linux/gl_p2p_init.o
+  CC      drivers/misc/mediatek/connectivity/combo/drv_wlan/mt6620/wlan/os/linux/gl_p2p_kal.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_config.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_rds_parser.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_patch.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_utils.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_link.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_eint.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_lib.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_rds.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_cmd.o
+make: Выход из каталога `/home/iicux/build'

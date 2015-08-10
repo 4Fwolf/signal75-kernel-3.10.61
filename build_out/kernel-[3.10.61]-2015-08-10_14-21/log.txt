@@ -1,0 +1,74 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  LD      drivers/misc/mediatek/gyroscope/built-in.o
+  CC      drivers/misc/mediatek/hwmon/batchsen/batch.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c.o
+  LD      drivers/misc/mediatek/hwmon/batchsen/built-in.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_helper.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c_common.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_dev.o
+  LD      drivers/misc/mediatek/i2c/mt6575/built-in.o
+  LD      drivers/misc/mediatek/i2c/built-in.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/kd_sensorlist.o
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/gc0310_yuv/gc0310_yuv_Sensor.o
+  LD      drivers/misc/mediatek/hwmon/hwmsen/built-in.o
+  LD      drivers/misc/mediatek/hwmon/built-in.o
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/imx179_mipi_raw/imx179mipiraw_Sensor.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/gc0310_yuv/built-in.o
+  CC      drivers/misc/mediatek/irq/mt6575/irq.o
+  CC      drivers/misc/mediatek/kernel/kdb_enhance.o
+  CC      drivers/misc/mediatek/kernel/sched/cputopo.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/imx179_mipi_raw/built-in.o
+  CC      drivers/misc/mediatek/kernel/mtk_trace.o
+  LD      drivers/misc/mediatek/irq/mt6575/built-in.o
+  LD      drivers/misc/mediatek/irq/built-in.o
+  CC      drivers/misc/mediatek/kernel/mtk_meminfo.o
+  LD      drivers/misc/mediatek/kernel/sched/built-in.o
+  CC      drivers/misc/mediatek/kernel/system.o
+  AS      drivers/misc/mediatek/kernel/mt_cache_v7.o
+  CC      drivers/misc/mediatek/kernel/fiq_smp_call.o
+  CC      drivers/misc/mediatek/kernel/sec_osal.o
+  LD      drivers/misc/mediatek/kernel/built-in.o
+make: Выход из каталога `/home/iicux/build'

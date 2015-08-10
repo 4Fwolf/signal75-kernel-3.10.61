@@ -907,14 +907,14 @@ kalP2PIndicateChannelReady(IN P_GLUE_INFO_T prGlueInfo,
 		cfg80211_ready_on_channel(prGlueInfo->prP2PInfo->prDevHandler,	/* struct net_device * dev, */
 					  u8SeqNum,	/* u64 cookie, */
 					  &chandef, u4Duration,	/* unsigned int duration, */
-					  GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */ */
+					  GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */
 #else
 		cfg80211_ready_on_channel(prGlueInfo->prP2PInfo->prDevHandler,	/* struct net_device * dev, */
 					  u8SeqNum,	/* u64 cookie, */
 					  prIEEE80211ChnlStruct,	/* struct ieee80211_channel * chan, */
 					  eChnlType,	/* enum nl80211_channel_type channel_type, */
 					  u4Duration,	/* unsigned int duration, */
-					  GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */ */
+					  GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */
 #endif
 
 	} while (FALSE);
@@ -1042,7 +1042,9 @@ kalP2PIndicateBssInfo(IN P_GLUE_INFO_T prGlueInfo,
 
 
 		/* Return this structure. */
-		cfg80211_put_bss(prCfg80211Bss);
+		// ***** IICuX fix 10.08.2015 13:42:24 *****
+		//cfg80211_put_bss(prCfg80211Bss);
+		cfg80211_put_bss(prGlueP2pInfo->wdev.wiphy, prCfg80211Bss);
 
 	} while (FALSE);
 
@@ -1060,7 +1062,7 @@ kalP2PIndicateMgmtTxStatus(IN P_GLUE_INFO_T prGlueInfo,
 	do {
 		if ((prGlueInfo == NULL) || (pucFrameBuf == NULL) || (u4FrameLen == 0)) {
 			DBGLOG(P2P, TRACE,
-			       ("Unexpected pointer PARAM. 0x%lx, 0x%lx, %ld.", prGlueInfo,
+			       ("Unexpected pointer PARAM. 0xlx, 0xlx, ld.", prGlueInfo,
 				pucFrameBuf, u4FrameLen));
 			ASSERT(FALSE);
 			break;
@@ -1154,7 +1156,7 @@ kalP2PGCIndicateConnectionStatus(IN P_GLUE_INFO_T prGlueInfo,
 
 		if (prP2pConnInfo) {
 			cfg80211_connect_result(prGlueP2pInfo->prDevHandler,	/* struct net_device * dev, */
-						prP2pConnInfo->aucBssid, prP2pConnInfo->aucIEBuf, prP2pConnInfo->u4BufLength, pucRxIEBuf, u2RxIELen, u2StatusReason, GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */ */
+						prP2pConnInfo->aucBssid, prP2pConnInfo->aucIEBuf, prP2pConnInfo->u4BufLength, pucRxIEBuf, u2RxIELen, u2StatusReason, GFP_KERNEL);	/* gfp_t gfp    /* allocation flags */
 			prP2pConnInfo->fgIsConnRequest = FALSE;
 		} else {
 			/* Disconnect, what if u2StatusReason == 0? */

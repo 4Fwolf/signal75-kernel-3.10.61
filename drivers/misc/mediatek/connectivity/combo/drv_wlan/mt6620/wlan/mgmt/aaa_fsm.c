@@ -696,7 +696,7 @@ aaaFsmRunEventTxDone(IN P_ADAPTER_T prAdapter,
 	ASSERT(prAdapter);
 	ASSERT(prMsduInfo);
 
-	DBGLOG(AAA, LOUD, ("EVENT-TX DONE: Current Time = %ld\n", kalGetTimeTick()));
+	DBGLOG(AAA, LOUD, ("EVENT-TX DONE: Current Time = ld\n", kalGetTimeTick()));
 
 	prStaRec = cnmGetStaRecByIndex(prAdapter, prMsduInfo->ucStaRecIndex);
 
@@ -1260,7 +1260,7 @@ VOID joinComplete(IN P_ADAPTER_T prAdapter)
 
 
 	/* 4 <3.G> Save the available Auth Types during Roaming (Design for Fast BSS Transition). */
-	/* if (prAdapter->fgIsEnableRoaming) /* NOTE(Kevin): Always prepare info for roaming */ */
+	/* if (prAdapter->fgIsEnableRoaming) /* NOTE(Kevin): Always prepare info for roaming */
 	{
 
 		if (prJoinInfo->ucCurrAuthAlgNum == AUTH_ALGORITHM_NUM_OPEN_SYSTEM) {

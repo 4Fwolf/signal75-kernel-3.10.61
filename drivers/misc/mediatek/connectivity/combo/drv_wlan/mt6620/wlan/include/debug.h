@@ -204,7 +204,7 @@ typedef enum _ENUM_DBG_MODULE_T {
 } ENUM_DBG_MODULE_T;
 
 /* XLOG */
-/* #define XLOG_DBG_MODULE_IDX    28 /* DBG_MODULE_NUM */ */
+/* #define XLOG_DBG_MODULE_IDX    28 /* DBG_MODULE_NUM */
 /* #if (XLOG_DBG_MODULE_IDX != XLOG_DBG_MODULE_IDX) */
 /* #error "Please modify the DBG_MODULE_NUM and make sure this include at XLOG" */
 /* #endif */
