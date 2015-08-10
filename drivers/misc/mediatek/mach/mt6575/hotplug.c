@@ -23,7 +23,8 @@ extern void __disable_dcache__inner_flush_dcache_L1(void);                      
 extern void __disable_dcache__inner_flush_dcache_L1__inner_clean_dcache_L2(void);   //definition in mt_cache_v7.S
 extern void __disable_dcache__inner_flush_dcache_L1__inner_flush_dcache_L2(void);   //definition in mt_cache_v7.S
 
-
+// IICuX 10.08.2015 16:17:09 
+extern volatile int pen_release;
 
 /* 
  * global variable 

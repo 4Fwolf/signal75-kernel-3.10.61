@@ -65,6 +65,11 @@
 /*
  * hps algo - hmp
  */
+
+// IICuX 10.08.2015 16:26:01 
+extern int cpu_down(unsigned int cpu);
+extern int cpu_up(unsigned int cpu);
+
 void hps_algo_hmp(void)
 {
     unsigned int cpu;

@@ -1,0 +1,59 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+start to parse fig file!
+  HOSTLD  scripts/mod/modpost
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/fmradio/core/fm_config.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_rds_parser.o
+  LD      drivers/pinctrl/built-in.o
+  LD      drivers/platform/built-in.o
+  CC      drivers/power/power_supply_core.o
+  LD      drivers/pwm/built-in.o
+  CC      drivers/regulator/core.o
+  CC      drivers/power/power_supply_sysfs.o
+  CC      drivers/power/power_supply_leds.o
+  CC      drivers/power/mediatek/battery_meter.o
+  CC      drivers/power/mediatek/battery_common.o
+  CC      drivers/regulator/dummy.o
+  CC      drivers/power/mediatek/linear_charging.o
+  CC      drivers/regulator/fixed-helper.o
+  CC      drivers/regulator/of_regulator.o
+  LD      drivers/power/reset/built-in.o
+  LD      drivers/power/power_supply.o
+  LD      drivers/regulator/built-in.o
+  LD      drivers/power/mediatek/built-in.o
+  LD      drivers/power/built-in.o
+make: Выход из каталога `/home/iicux/build'

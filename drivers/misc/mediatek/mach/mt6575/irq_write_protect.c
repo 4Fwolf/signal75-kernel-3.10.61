@@ -15,7 +15,7 @@ static void mt_set_pol_via_smc(void __iomem *addr, u32 value)
 
 static int __init mt_irq_w_protect_init(void){
 	pr_notice("irq pol register write protection workaround init...\n");
-	irq_pol_workaround = mt_set_pol_via_smc;
+	//irq_pol_workaround = mt_set_pol_via_smc;
 
 	return 0;
 }

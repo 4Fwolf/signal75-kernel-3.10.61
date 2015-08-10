@@ -4,11 +4,8 @@
 
 #include "partition_define.h"
 
-//mt6516_partition.h has defination
-//mt6516_download.h define again, both is 20
-
 #define MAX_PARTITION_NAME_LEN 64
-#if defined(MTK_EMMC_SUPPORT) || defined(CONFIG_MTK_EMMC_SUPPORT)
+#ifdef MTK_EMMC_SUPPORT
 /*64bit*/
 typedef struct
 {
@@ -32,9 +29,9 @@ typedef struct
 typedef struct
 {
     unsigned char name[MAX_PARTITION_NAME_LEN];     /* partition name */
-    unsigned long long size;     						/* partition size */	
-    unsigned long long offset;       					/* partition start */
-    unsigned long long mask_flags;       				/* partition flags */
+    unsigned long size;     						/* partition size */	
+    unsigned long offset;       					/* partition start */
+    unsigned long mask_flags;       				/* partition flags */
 
 } pt_resident;
 #endif
@@ -50,8 +47,8 @@ typedef struct
 
 //#define PT_LOCATION          4090      // (4096-80)
 //#define MPT_LOCATION        4091            // (4096-81)
-#define PT_SIG      0x50547632            //"PTv2"
-#define MPT_SIG    0x4D505432           //"MPT2"
+#define PT_SIG      0x50547631            //"PTv1"
+#define MPT_SIG    0x4D505431           //"MPT1"
 #define PT_SIG_SIZE 4
 #define is_valid_mpt(buf) ((*(u32 *)(buf))==MPT_SIG)
 #define is_valid_pt(buf) ((*(u32 *)(buf))==PT_SIG)
@@ -61,8 +58,8 @@ typedef struct
 typedef struct _DM_PARTITION_INFO
 {
     char part_name[MAX_PARTITION_NAME_LEN];             /* the name of partition */
-    unsigned long long start_addr;                                  /* the start address of partition */
-    unsigned long long part_len;                                    /* the length of partition */
+    unsigned int start_addr;                                  /* the start address of partition */
+    unsigned int part_len;                                    /* the length of partition */
     unsigned char part_visibility;                              /* part_visibility is 0: this partition is hidden and CANNOT download */
                                                         /* part_visibility is 1: this partition is visible and can download */                                            
     unsigned char dl_selected;                                  /* dl_selected is 0: this partition is NOT selected to download */

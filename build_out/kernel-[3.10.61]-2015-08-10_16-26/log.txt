@@ -1,0 +1,84 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/mach/mt6575/mt_hotplug_strategy_main.o
+  CC      drivers/misc/mediatek/mmc-host/mt6575/sd.o
+  LD      drivers/misc/mediatek/pmt/built-in.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_hotplug_strategy_algo.o
+  CC      drivers/misc/mediatek/power/mt6575/upmu_common.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic_auxadc.o
+  CC      drivers/misc/mediatek/mach/mt6575/camera_pipe_mgr.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic_chr_type_det.o
+  CC      drivers/misc/mediatek/mach/mt6575/camera_sysram.o
+  CC      drivers/misc/mediatek/power/mt6575/battery_meter_hal.o
+  CC      drivers/misc/mediatek/power/mt6575/charging_hw_pmic.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_spm_mtcmos.o
+  LD      drivers/misc/mediatek/power/mt6575/built-in.o
+  LD      drivers/misc/mediatek/power/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_sleep.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_cpufreq.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_cpu_ss.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_idle.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_clkmgr_common.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_clkmgr.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_clkbuf_ctl.o
+  CC      drivers/misc/mediatek/mach/mt6575/mtk_ccci_helper.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_ptp.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/accdet/accdet_custom.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/accelerometer/mc3410-new/cust_acc.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/accdet/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/alsps/cm36652-new/cust_alsps.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/core/board.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/alsps/cm36652-new/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/pmic_drv.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/accelerometer/mc3410-new/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/leds/mt65xx/cust_leds.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/magnetometer/akm09911-new/cust_mag.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/magnetometer/akm09911-new/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/vibrator/cust_vibrator.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/leds/mt65xx/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/core/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/leds/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/vibrator/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/built-in.o
+  LD      drivers/misc/mediatek/mach/built-in.o
+make: Выход из каталога `/home/iicux/build'

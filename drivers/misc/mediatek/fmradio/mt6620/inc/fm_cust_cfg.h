@@ -106,16 +106,10 @@ enum {
 #define FM_RX_SMG_TH_MT6620          6	/* FM soft-mute gain threshold */
 #define FM_RX_DEEMPHASIS_MT6620       0	/* 0-50us, China Mainland; 1-75us China Taiwan */
 #define FM_RX_OSC_FREQ_MT6620         0	/* 0-26MHz; 1-19MHz; 2-24MHz; 3-38.4MHz; 4-40MHz; 5-52MHz */
-#if 0
-#define FM_RX_RSSI_TH_LONG_MT6620    0xF2D8	/* FM radio long antenna RSSI threshold(-4dBuV) */
-#define FM_RX_RSSI_TH_SHORT_MT6620   0xF2D8	/* FM radio short antenna RSSI threshold(-4dBuV) */
 #define FM_RX_CQI_TH_MT6620          0x00E9	/* FM radio Channel quality indicator threshold(0x0000~0x00FF) */
-#define FM_RX_MR_TH_MT6620           0x01BD	/* FM radio MR threshold */
-#define FM_RX_SMG_TH_MT6620          0x4025	/* FM soft-mute gain threshold */
 #define FM_RX_SEEK_SPACE_MT6620      1	/* FM radio seek space,1:100KHZ; 2:200KHZ */
 #define FM_RX_SCAN_CH_SIZE_MT6620    40	/* FM radio scan max channel size */
 #define FM_RX_BAND_MT6620            1	/* FM radio band, 1:87.5MHz~108.0MHz; 2:76.0MHz~90.0MHz; 3:76.0MHz~108.0MHz; 4:special */
-
 #define FM_RX_SCAN_SORT_SELECT_MT6620 FM_SCAN_SORT_NON
 #define FM_RX_FAKE_CH_NUM_MT6620      1
 #define FM_RX_FAKE_CH_RSSI_MT6620     40
@@ -124,7 +118,7 @@ enum {
 #define FM_RX_FAKE_CH_3_MT6620        0
 #define FM_RX_FAKE_CH_4_MT6620        0
 #define FM_RX_FAKE_CH_5_MT6620        0
-#endif
+
 /* TX */
 #define FM_TX_PWR_LEVEL_MAX_MT6620  120
 #define FM_TX_SCAN_HOLE_LOW_MT6620  923	/* 92.3MHz~95.4MHz should not show to user */

@@ -14,7 +14,7 @@
 #include <mach/sync_write.h>
 
 #include "../camera/kd_camera_hw.h"
-//#include <asm/system.h>
+#include <asm/system.h>
 #include <mach/mt_clkmgr.h>
 
 
@@ -2285,6 +2285,17 @@ static struct platform_driver g_stCAMERA_HW_Driver = {
     }
 };
 
+// ***** IICuX fix 10.08.2015 15:07:33 *****
+static  struct file_operations fcamera_proc_fops = {
+    .read = CAMERA_HW_DumpReg_To_Proc,
+    .write = CAMERA_HW_Reg_Debug
+};
+
+static  struct file_operations fcamera_proc_fops2 = {
+    .read = CAMERA_HW_DumpReg_To_Proc,
+    .write = CAMERA_HW_Reg_Debug2
+};
+
 /*=======================================================================
   * CAMERA_HW_i2C_init()
   *=======================================================================*/
@@ -2307,6 +2318,13 @@ static int __init CAMERA_HW_i2C_init(void)
     //}
 
     //Register proc file for main sensor register debug
+
+// ***** IICuX fix 10.08.2015 15:07:33 *****
+/* FIX-ME: linux-3.10 procfs API changed */
+#if 1
+    proc_create("driver/camsensor", 0, NULL, &fcamera_proc_fops);
+    proc_create("driver/camsensor2", 0, NULL, &fcamera_proc_fops2);
+#else
     prEntry = create_proc_entry("driver/camsensor", 0, NULL);
     if (prEntry) {
         prEntry->read_proc = CAMERA_HW_DumpReg_To_Proc;
@@ -2325,6 +2343,7 @@ static int __init CAMERA_HW_i2C_init(void)
     else {
         PK_ERR("add /proc/driver/camsensor2 entry fail \n");
     }
+#endif
     atomic_set(&g_CamHWOpend, 0); 
     //atomic_set(&g_CamHWOpend2, 0);
     atomic_set(&g_CamDrvOpenCnt, 0);

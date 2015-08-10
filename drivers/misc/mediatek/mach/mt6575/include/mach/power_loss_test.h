@@ -7,9 +7,9 @@
 #include <linux/rtc.h>
 #include <linux/delay.h> /* for PL_RESET */
 
-#if !defined(CONFIG_MTK_GPT_SCHEME_SUPPORT)
+/*#if !defined(CONFIG_MTK_GPT_SCHEME_SUPPORT)
 #include "pmt.h"
-#endif
+#endif*/
 
 // Debug
 #ifdef CONFIG_PWR_LOSS_MTK_SPOH

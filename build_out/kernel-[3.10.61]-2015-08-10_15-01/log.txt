@@ -1,0 +1,104 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+  CHK     include/generated/utsrelease.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/fmradio/core/fm_config.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_utils.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_link.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_eint.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_lib.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_rds.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_cmd.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_config.o
+  CC      drivers/misc/mediatek/fmradio/dummy.o
+  CC      drivers/switch/switch_class.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_base.o
+  LD      drivers/switch/built-in.o
+  CC      drivers/misc/mediatek/gyroscope/gyroscope.o
+  LD      drivers/misc/mediatek/fmradio/mtk_fm_drv.o
+  LD      drivers/misc/mediatek/fmradio/built-in.o
+  CC      drivers/misc/mediatek/gyroscope/gyro_factory.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_main.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_debugFS.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_log.o
+  LD      drivers/misc/mediatek/gyroscope/built-in.o
+  CC      drivers/thermal/thermal_core.o
+  CC      drivers/misc/mediatek/gpu/hal/mtk_gpu_utility.o
+  LD      drivers/misc/mediatek/gpu/hal/hal.o
+  LD      drivers/misc/mediatek/gpu/hal/built-in.o
+  LD      drivers/misc/mediatek/gpu/mt6575/SGX/built-in.o
+  LD      drivers/misc/mediatek/gpu/mt6575/built-in.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_hal.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_bridge.o
+  CC      drivers/thermal/backward_compatible.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_profile_dvfs.o
+  CC      drivers/misc/mediatek/hwmon/batchsen/batch.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_monitor_3D_fence.o
+  LD      drivers/thermal/thermal_sys.o
+  LD      drivers/thermal/built-in.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_helper.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_hashtable.o
+  LD      drivers/misc/mediatek/gpu/ged/ged.o
+  LD      drivers/misc/mediatek/gpu/ged/built-in.o
+  LD      drivers/misc/mediatek/gpu/built-in.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_dev.o
+  LD      drivers/misc/mediatek/hwmon/batchsen/built-in.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/kd_sensorlist.o
+  CC      drivers/tty/tty_io.o
+  LD      drivers/misc/mediatek/hwmon/hwmsen/built-in.o
+  LD      drivers/misc/mediatek/hwmon/built-in.o
+  CC      drivers/tty/n_tty.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c_common.o
+  LD      drivers/misc/mediatek/i2c/mt6575/built-in.o
+  LD      drivers/misc/mediatek/i2c/built-in.o
+  CC      drivers/tty/tty_ioctl.o
+  CC      drivers/tty/tty_ldisc.o
+  CC      drivers/tty/tty_buffer.o
+  CC      drivers/tty/tty_port.o
+  CC      drivers/tty/tty_mutex.o
+  CC      drivers/tty/tty_ldsem.o
+  CC      drivers/tty/pty.o
+  CC      drivers/tty/sysrq.o
+  LD      drivers/tty/ipwireless/built-in.o
+  CC      drivers/tty/serial/serial_core.o
+  CC      drivers/tty/serial/kgdboc.o
+  LD      drivers/tty/vt/built-in.o
+  LD      drivers/tty/serial/built-in.o
+  LD      drivers/tty/built-in.o
+make: Выход из каталога `/home/iicux/build'

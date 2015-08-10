@@ -30,9 +30,10 @@
 #include "fm_stdlib.h"
 #include "fm_patch.h"
 #include "fm_config.h"
-#if (!defined(MT6628_FM) && !defined(MT6620_FM) && !defined(MT6627_FM) && !defined(MT6580_FM) && !defined(MT6630_FM))
+// ***** IICuX fix 10.08.2015 14:58:58 *****
+//#if (!defined(MT6628_FM) && !defined(MT6620_FM) && !defined(MT6627_FM) && !defined(MT6580_FM) && !defined(MT6630_FM))
 #include "fm_cust_cfg.h"
-#endif
+//#endif
 static fm_cust_cfg fm_config;
 static fm_s32 fm_index;
 

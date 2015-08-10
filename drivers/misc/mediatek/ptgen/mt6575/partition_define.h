@@ -10,24 +10,24 @@
 #define GB  (1024 * MB)
 
 #define PART_PRELOADER "PRELOADER" 
-#define PART_PRO_INFO "PRO_INFO" 
+#define PART_DSP_BL "DSP_BL" 
+#define PART_MBR "MBR" 
+#define PART_EBR1 "EBR1" 
+#define PART_PMT "PMT" 
 #define PART_NVRAM "NVRAM" 
-#define PART_PROTECT_F "PROTECT_F" 
-#define PART_PROTECT_S "PROTECT_S" 
 #define PART_SECCFG "SECCFG" 
 #define PART_UBOOT "UBOOT" 
 #define PART_BOOTIMG "BOOTIMG" 
 #define PART_RECOVERY "RECOVERY" 
 #define PART_SEC_RO "SEC_RO" 
 #define PART_MISC "MISC" 
-#define PART_FRP "FRP" 
 #define PART_LOGO "LOGO" 
 #define PART_EXPDB "EXPDB" 
-#define PART_FAT "FAT" 
+#define PART_EBR2 "EBR2" 
 #define PART_ANDROID "ANDROID" 
 #define PART_CACHE "CACHE" 
-#define PART_NVDATA "NVDATA" 
 #define PART_USRDATA "USRDATA" 
+#define PART_FAT "FAT" 
 #define PART_BMTPOOL "BMTPOOL" 
 /*preloader re-name*/
 #define PART_SECURE "SECURE" 
@@ -35,6 +35,7 @@
 #define PART_ANDSYSIMG "ANDSYSIMG" 
 #define PART_USER "USER" 
 /*Uboot re-name*/
+#define PART_DSP_DL "DSP_DL" 
 #define PART_APANIC "APANIC" 
 
 #define PART_FLAG_NONE              0 
@@ -42,47 +43,39 @@
 #define PART_FLAG_END              0x2 
 #define PART_MAGIC              0x58881688 
 
-#if defined(CONFIG_MTK_MLC_NAND_SUPPORT)
-#define PART_SIZE_BMTPOOL			(168*1024*1024)
-#else
-#define PART_SIZE_BMTPOOL			(14*1024*1024)
-#endif
-
-#if 0
-#ifdef CONFIG_MTK_EMMC_SUPPORT
+#define PART_SIZE_PRELOADER			(256*KB)
+#define PART_SIZE_DSP_BL			(5888*KB)
+#define PART_SIZE_MBR			(16*KB)
+#define PART_SIZE_EBR1			(368*KB)
+#define PART_SIZE_PMT			(4096*KB)
+#define PART_SIZE_NVRAM			(3072*KB)
 #define PART_SIZE_SECCFG			(128*KB)
-#define PART_OFFSET_SECCFG			(0x2900000)
-#define PART_SIZE_SEC_RO			(256*KB)
-#define PART_OFFSET_SEC_RO			(0x3780000)
-#else
-#define PART_SIZE_SECCFG			(256*KB)
-#define PART_OFFSET_SECCFG			(0xb00000)
-#define PART_SIZE_SEC_RO			(256*KB)
-#define PART_OFFSET_SEC_RO			(0x19c0000)
-#endif
-#else
-#define PART_SIZE_SECCFG			0
-#define PART_OFFSET_SECCFG			0
-#define PART_SIZE_SEC_RO			0
-#define PART_OFFSET_SEC_RO			0
-#endif
+#define PART_OFFSET_SECCFG			(0xd60000)
+#define PART_SIZE_UBOOT			(384*KB)
+#define PART_SIZE_BOOTIMG			(6144*KB)
+#define PART_SIZE_RECOVERY			(6144*KB)
+#define PART_SIZE_SEC_RO			(6144*KB)
+#define PART_OFFSET_SEC_RO			(0x19e0000)
+#define PART_SIZE_MISC			(384*KB)
+#define PART_SIZE_LOGO			(3072*KB)
+#define PART_SIZE_EXPDB			(640*KB)
+#define PART_SIZE_EBR2			(16*KB)
+#define PART_SIZE_ANDROID			(525312*KB)
+#define PART_SIZE_CACHE			(525312*KB)
+#define PART_SIZE_USRDATA			(1048576*KB)
+#define PART_SIZE_FAT			(0*KB)
+#define PART_SIZE_BMTPOOL			(0x50)
 
-#ifndef RAND_START_ADDR
-#define RAND_START_ADDR   1024
-#endif
+
+#define PART_NUM			20
+
 
 
 #define PART_MAX_COUNT			 40
 
-#ifndef MTK_EMMC_SUPPORT
-#ifndef MTK_MLC_NAND_SUPPORT
-#define WRITE_SIZE_Byte		(4*1024)
-#else
-#define WRITE_SIZE_Byte		(16*1024)
-#endif
-#else
+#define MBR_START_ADDRESS_BYTE			(6144*KB)
+
 #define WRITE_SIZE_Byte		512
-#endif
 typedef enum  {
 	EMMC = 1,
 	NAND = 2,
@@ -108,7 +101,7 @@ struct excel_info{
 	unsigned int partition_idx;
 	Region region;
 };
-#if defined(MTK_EMMC_SUPPORT) || defined(CONFIG_MTK_EMMC_SUPPORT)
+#ifdef  MTK_EMMC_SUPPORT
 /*MBR or EBR struct*/
 #define SLOT_PER_MBR 4
 #define MBR_COUNT 8
@@ -120,16 +113,7 @@ struct MBR_EBR_struct{
 
 extern struct MBR_EBR_struct MBR_EBR_px[MBR_COUNT];
 #endif
-extern struct excel_info PartInfo[PART_MAX_COUNT];
+extern struct excel_info *PartInfo;
 
-#if defined(MTK_EMMC_SUPPORT) || defined(CONFIG_MTK_EMMC_SUPPORT)
-extern int get_part_num_emmc();
-
-#define PART_NUM			get_part_num_emmc()
-#else
-extern int get_part_num_nand();
-
-#define PART_NUM			get_part_num_nand()
-#endif
 
 #endif

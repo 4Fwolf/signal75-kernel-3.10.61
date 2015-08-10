@@ -20,10 +20,12 @@
 #include <linux/sched.h>	//show_stack(current,NULL)
 #include <mach/env.h>
 
-#include "partition_define.h"
-#include "partition_define_private.h"
+// ***** IICuX 10.08.2015 16:43:53 *****
+#include "../../ptgen/mt6575/partition_define.h"
+#include "../../ptgen/mt6575/partition_define_private.h"
+#include "../../ptgen/mt6575/pmt.h"
+
 #include "dumchar.h"		/* local definitions */
-#include "pmt.h"
 #include <linux/mmc/host.h>
 #include <linux/mmc/sd_misc.h>
 #include <linux/version.h>

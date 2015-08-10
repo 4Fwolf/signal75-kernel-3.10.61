@@ -23,6 +23,9 @@
 // local includes
 #include <mach/mt_hotplug_strategy_internal.h>
 
+// ***** IICuX 10.08.2015 16:20:00 *****
+extern int cpu_down(unsigned int cpu);
+
 // forward references
 
 /*============================================================================*/

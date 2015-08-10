@@ -37,6 +37,13 @@
 #include <linux/fs.h>
 #include <asm/uaccess.h>
 
+// ***** IICuX 10.08.2015 17:29:06 *****
+#include "../../ptgen/mt6575/partition_define.h"
+#define EMMC_PART_BOOT1		(BOOT_1)
+#define EMMC_PART_BOOT2		(BOOT_2)
+#define EMMC_PART_RPMB		(RPMB)
+#define EMMC_PART_USER 		(USER)
+
 #ifdef CONFIG_MTK_EMMC_SUPPORT
 //extern struct excel_info PartInfoEmmc[PART_NUM];
 extern u32 g_emmc_mode_switch;

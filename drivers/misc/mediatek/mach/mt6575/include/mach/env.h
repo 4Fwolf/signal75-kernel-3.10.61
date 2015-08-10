@@ -7,6 +7,8 @@
 #define CFG_ENV_OFFSET		0x20000    /*128KB*/
 #define ENV_PART		"PARA"
 
+extern void env_init(loff_t env_part_addr); // IICuX 10.08.2015 16:48:36 
+
 struct env_struct {
 	char sig_head[8]; 
 	char *env_data;
@@ -76,6 +78,7 @@ struct env_ioctl
 	int value_len;	
 };
 
+extern void env_init(loff_t env_part_addr); // IICuX 10.08.2015 16:48:36 
 extern int set_env(char *name,char *value);
 extern char *get_env(char *name);
 #endif

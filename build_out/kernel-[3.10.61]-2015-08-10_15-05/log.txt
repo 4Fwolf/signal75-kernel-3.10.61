@@ -1,0 +1,84 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/kd_sensorlist.o
+  CC      drivers/misc/mediatek/irq/mt6575/irq.o
+  CC      drivers/video/fb_notify.o
+  LD      drivers/misc/mediatek/irq/mt6575/built-in.o
+  LD      drivers/misc/mediatek/irq/built-in.o
+  CC      drivers/video/fbmem.o
+  CC      drivers/video/fbmon.o
+  CC      drivers/video/fbcmap.o
+  CC      drivers/video/fbsysfs.o
+  CC      drivers/video/modedb.o
+  CC      drivers/video/fbcvt.o
+  LD      drivers/video/backlight/built-in.o
+  CC      drivers/video/console/fonts.o
+  CC      drivers/video/console/font_8x16.o
+  CC      drivers/video/logo/logo.o
+  LD      drivers/video/console/font.o
+  LD      drivers/video/console/built-in.o
+  LOGO    drivers/video/logo/logo_linux_mono.c
+  LOGO    drivers/video/logo/logo_linux_vga16.c
+  LOGO    drivers/video/logo/logo_linux_clut224.c
+  LOGO    drivers/video/logo/logo_superh_mono.c
+  LOGO    drivers/video/logo/clut_vga16.c
+  LOGO    drivers/video/logo/logo_blackfin_vga16.c
+  LOGO    drivers/video/logo/logo_superh_vga16.c
+  LOGO    drivers/video/logo/logo_blackfin_clut224.c
+  LD      drivers/video/omap2/displays/built-in.o
+  LD      drivers/video/omap2/built-in.o
+  LOGO    drivers/video/logo/logo_dec_clut224.c
+  CC      drivers/video/cfbfillrect.o
+  LOGO    drivers/video/logo/logo_m32r_clut224.c
+  LOGO    drivers/video/logo/logo_mac_clut224.c
+  CC      drivers/video/cfbcopyarea.o
+  LOGO    drivers/video/logo/logo_parisc_clut224.c
+  LOGO    drivers/video/logo/logo_sgi_clut224.c
+  LOGO    drivers/video/logo/logo_spe_clut224.c
+  LOGO    drivers/video/logo/logo_sun_clut224.c
+  LOGO    drivers/video/logo/logo_superh_clut224.c
+  CC      drivers/video/logo/logo_linux_mono.o
+  CC      drivers/video/logo/logo_linux_vga16.o
+  CC      drivers/video/logo/logo_linux_clut224.o
+  LD      drivers/video/logo/built-in.o
+  CC      drivers/video/cfbimgblt.o
+  LD      drivers/video/fb.o
+  LD      drivers/video/built-in.o
+make: Выход из каталога `/home/iicux/build'

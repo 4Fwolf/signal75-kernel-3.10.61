@@ -5,7 +5,7 @@
 
 include $(srctree)/drivers/misc/mediatek/Makefile.custom
 
-ifneq ($(CONFIG_ARM), y)
+ifneq ($(CONFIG_ARM64), y)
 # For arm32
 #ifeq ($(CONFIG_MTK_INTERNAL), yes)
 #ifeq ($(MTK_USE_RESERVED_EXT_MEM), yes)
@@ -24,12 +24,15 @@ obj-y += ca7_timer.o
 ##obj-y += mt_reg_dump.o
 #obj-y += mt_device_apc.o
 #obj-y += mt_pm_init.o
-obj-y += mt-smp.o
-obj-y += hotplug.o
-obj-y += mt-headsmp.o
+
+# IICuX 10.08.2015 16:13:30 
+obj-$(CONFIG_SMP) += mt-smp.o hotplug.o mt-headsmp.o mt_hotplug_strategy_main.o mt_hotplug_strategy_core.o mt_hotplug_strategy_procfs.o mt_hotplug_strategy_cpu.o mt_hotplug_strategy_api.o mt_hotplug_strategy_algo.o
+#obj-y += mt_hotplug_strategy_main.o mt_hotplug_strategy_core.o mt_hotplug_strategy_procfs.o mt_hotplug_strategy_cpu.o mt_hotplug_strategy_api.o mt_hotplug_strategy_algo.o
+#obj-y += hotplug.o
+#obj-y += mt-headsmp.o
 obj-y += mt_hotplug.o
 #obj-y += mt_hotplug_mechanism.o
-obj-y += mt_hotplug_strategy_main.o mt_hotplug_strategy_core.o mt_hotplug_strategy_procfs.o mt_hotplug_strategy_cpu.o mt_hotplug_strategy_api.o mt_hotplug_strategy_algo.o
+
 obj-y += innercache.o
 #obj-y += mt_l2c.o
 #obj-y += eint.o
@@ -64,7 +67,7 @@ KBUILD_AFLAGS += -DMT_CPUIDLE
 #endif
 #
 #obj-y += cpu_dormant.o
-ifneq ($(CONFIG_MTK_FPGA),y)
+ifeq ($(CONFIG_MTK_FPGA),y)
 obj-y += mt_idle.o
 endif
 #obj-y += mt_dcm.o

@@ -3,7 +3,7 @@
 #include <linux/proc_fs.h>
 #include <linux/statfs.h>
 #include <asm/uaccess.h>   /*set_fs get_fs mm_segment_t*/
-#include "partition_define.h"
+#include "../../ptgen/mt6575/partition_define.h"  // IICuX 10.08.2015 16:49:27 
 #include <mach/env.h>
 
 #define MODULE_NAME "LK_ENV"

@@ -1,0 +1,267 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+#
+# configuration written to .config
+#
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CC      arch/arm/mm/fault.o
+  CC      arch/arm/kernel/process.o
+  CC      kernel/printk.o
+  LD      arch/arm/mm/built-in.o
+  CC      arch/arm/kernel/traps.o
+  CC      mm/slub.o
+  LD      arch/arm/kernel/built-in.o
+  CC      fs/char_dev.o
+  CC      kernel/mutex.o
+  CC      kernel/notifier.o
+  LD      fs/built-in.o
+  CC      kernel/mutex-debug.o
+  LD      mm/built-in.o
+  CC      kernel/lockdep.o
+  CC      drivers/android/binder.o
+  CC      sound/soc/mediatek/common/auddrv_underflow_mach.o
+  LD      sound/soc/mediatek/common/built-in.o
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_control.o
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_afe_connection.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_common.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1.o
+  LD      drivers/android/built-in.o
+  CC      drivers/base/power/main.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dummy.o
+  CC      lib/spinlock_debug.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_routing.o
+  LD      lib/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_capture2.o
+  LD      drivers/base/power/built-in.o
+  LD      drivers/base/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2.o
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md1_bt.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_voice_md2_bt.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_hdmi.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_i2s0Dl1.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_i2s0_awb.o
+  LD      drivers/input/touchscreen/mediatek/built-in.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_uldlloopback.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/mmc/card/block.o
+  CC      drivers/misc/mediatek/aee/common/dummy.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx.o
+  LD      drivers/misc/mediatek/aee/common/aee.o
+  LD      drivers/misc/mediatek/aee/common/built-in.o
+  LD      drivers/misc/mediatek/aee/built-in.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_record.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_mrgrx_awb.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_core.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fm_i2s_awb.o
+  LD      drivers/mmc/card/mmc_block.o
+  LD      drivers/mmc/card/built-in.o
+  CC      drivers/mmc/core/mmc.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_awb.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_dl1_bt.o
+  LD      drivers/mmc/core/mmc_core.o
+  LD      drivers/mmc/core/built-in.o
+  LD      drivers/mmc/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_bt_dai.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_dai_stub.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_driver.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_mmp.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_dummy.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_63xx.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_core.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_mdp_common.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_prof.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_test.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_fmtx.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ctrl.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_tdm_capture.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_func.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_lib.o
+  CC      drivers/misc/mediatek/cmdq/cmdq_sec.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_pcm_hp_impedance.o
+  CC      drivers/misc/mediatek/cmdq/mt6575/cmdq_mdp.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_machine.o
+  CC      drivers/misc/mediatek/cmdq/mt6575/cmdq_device.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_conf.o
+  CC      drivers/misc/mediatek/cmdq/mt6575/cmdq_platform.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_dbg.o
+  LD      drivers/misc/mediatek/cmdq/mt6575/built-in.o
+  LD      drivers/misc/mediatek/cmdq/built-in.o
+  CC      sound/soc/mediatek/mt_soc_audio_6580/mt_soc_codec_speaker_63xx.o
+  LD      sound/soc/mediatek/mt_soc_audio_6580/built-in.o
+  LD      sound/soc/mediatek/built-in.o
+  LD      sound/soc/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_exp.o
+  LD      sound/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_dev.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_idc.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6620.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_alps.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/osal.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6628.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_stub.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/mtk_wcn_cmb_hw.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_dbg.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/platform/alps/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/platform/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_uart.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6630.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/hif_sdio.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/stp_exp.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_sdio.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/stp_core.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/psm_core.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_chrdev_gps.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_chrdev_bt.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_ovl.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_chrdev_wifi.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/btm_core.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/core/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_color.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/linux/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/built-in.o
+  LD      drivers/misc/mediatek/connectivity/built-in.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/dumchar.o
+  CC      drivers/misc/mediatek/dual_ccci/ccci_md_main.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/env.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/DumChar.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dum-char/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_rdma.o
+  LD      drivers/misc/mediatek/dual_ccci/ccci.o
+  LD      drivers/misc/mediatek/dual_ccci/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_wdma.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_main.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_aal.o
+  CC      drivers/misc/mediatek/gps/gps.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_pwm.o
+  LD      drivers/misc/mediatek/gps/built-in.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_main.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_gamma.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_lib.o
+  LD      drivers/misc/mediatek/gpu/ged/ged.o
+  LD      drivers/misc/mediatek/gpu/ged/built-in.o
+  LD      drivers/misc/mediatek/gpu/built-in.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dither.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dsi.o
+  LD      drivers/misc/mediatek/i2c/mt6575/built-in.o
+  LD      drivers/misc/mediatek/i2c/built-in.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/irq/mt6575/irq.o
+  LD      drivers/misc/mediatek/fmradio/mtk_fm_drv.o
+  LD      drivers/misc/mediatek/fmradio/built-in.o
+  CC      drivers/misc/mediatek/keypad/kpd.o
+  LD      drivers/misc/mediatek/irq/mt6575/built-in.o
+  LD      drivers/misc/mediatek/irq/built-in.o
+  CC      drivers/misc/mediatek/keypad/mt6575/hal_kpd.o
+  CC      drivers/misc/mediatek/leds/mt6575/leds.o
+  LD      drivers/misc/mediatek/keypad/mt6575/built-in.o
+  LD      drivers/misc/mediatek/keypad/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_drv.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_path.o
+  LD      drivers/misc/mediatek/leds/mt6575/built-in.o
+  LD      drivers/misc/mediatek/leds/built-in.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_debug.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_mva.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dump.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_pgtable.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_hw.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_debug.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_manager.o
+  LD      drivers/misc/mediatek/m4u/mt6575/built-in.o
+  LD      drivers/misc/mediatek/m4u/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_irq.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_info.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_color_format.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_devs.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_mmp.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_misc.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/display_recorder.o
+  CC      drivers/misc/mediatek/mach/mt6575/camera_isp.o
+  CC      drivers/misc/mediatek/mmc-host/mt6575/dbg.o
+  LD      drivers/misc/mediatek/dispsys/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dispsys/built-in.o
+  CC      drivers/misc/mediatek/mmc-host/mt6575/sd.o
+  CC      drivers/misc/mediatek/mmc-host/mt6575/mt_sd_misc.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_sleep.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_cpufreq.o
+  CC      drivers/misc/mediatek/mtprof/sched_monitor.o
+  CC      drivers/misc/mediatek/mtprof/monitor_debug_out.o
+  LD      drivers/misc/mediatek/mtprof/built-in.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic_auxadc.o
+  CC      drivers/misc/mediatek/power/mt6575/pmic_chr_type_det.o
+  LD      drivers/misc/mediatek/power/mt6575/built-in.o
+  LD      drivers/misc/mediatek/power/built-in.o
+  CC      drivers/misc/mediatek/sched/mt_sched.o
+  CC      drivers/misc/mediatek/sched/mt_compat_sched.o
+  LD      drivers/misc/mediatek/sched/built-in.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_ptp.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm_internal.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm_fs.o
+  CC      drivers/misc/mediatek/mach/mt6575/signal75/core/board.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/core/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/signal75/built-in.o
+  LD      drivers/misc/mediatek/mach/mt6575/built-in.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm_sleep.o
+  LD      drivers/misc/mediatek/mach/built-in.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm_dpidle.o
+  CC      drivers/misc/mediatek/spm/mt6575/mt_spm_sodi.o
+  LD      drivers/misc/mediatek/spm/mt6575/built-in.o
+  LD      drivers/misc/mediatek/spm/built-in.o
+make: Выход из каталога `/home/iicux/build'

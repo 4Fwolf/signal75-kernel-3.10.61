@@ -1,0 +1,68 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+start to parse fig file!
+  HOSTLD  scripts/mod/modpost
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CALL    scripts/checksyscalls.sh
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/fmradio/core/fm_config.o
+  CC      drivers/misc/mediatek/gps/gps.o
+  CC      drivers/spi/spi.o
+  CC      drivers/staging/staging.o
+  CC      drivers/staging/android/ion/ion.o
+  LD      drivers/misc/mediatek/gps/built-in.o
+  CC      drivers/staging/android/ion/ion_heap.o
+  LD      drivers/spi/built-in.o
+  CC      drivers/staging/android/ashmem.o
+  CC      drivers/staging/android/ion/ion_page_pool.o
+  CC      drivers/staging/android/logger.o
+  CC      drivers/staging/android/ion/ion_system_heap.o
+  CC      drivers/staging/android/ion/ion_carveout_heap.o
+  LD      drivers/staging/media/built-in.o
+  CC      drivers/staging/android/timed_output.o
+  CC      drivers/staging/android/ion/ion_chunk_heap.o
+  CC      drivers/staging/android/lowmemorykiller.o
+  CC      drivers/staging/android/ion/ion_cma_heap.o
+  CC      drivers/staging/android/sync.o
+  CC      drivers/staging/android/sw_sync.o
+  CC      drivers/staging/android/ion/ion_debug.o
+  CC      drivers/staging/android/ion/ion_profile.o
+  CC      drivers/staging/android/ion/mtk/ion_drv.o
+  CC      drivers/staging/android/ion/mtk/ion_mm_heap.o
+  CC      drivers/staging/android/ion/mtk/ion_fb_heap.o
+  LD      drivers/staging/android/ion/mtk/built-in.o
+  LD      drivers/staging/android/ion/built-in.o
+  LD      drivers/staging/android/built-in.o
+  LD      drivers/staging/built-in.o
+make: Выход из каталога `/home/iicux/build'

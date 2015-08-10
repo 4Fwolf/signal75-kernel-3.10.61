@@ -1,4 +1,6 @@
-# Display parameters shown under Settings -> About Phone
+#add kernel source code path as head file seach path
+include $(srctree)/drivers/misc/mediatek/Makefile.custom
+ccflags-y += -I$(srctree)
 
 ifeq ($(CONFIG_MTK_MMC),y)
   CONFIG_MTK_USIF = y

@@ -1,0 +1,57 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CHK     include/generated/utsrelease.h
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CC      scripts/mod/devicetable-offsets.s
+  CALL    scripts/checksyscalls.sh
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/mmc-host/mt6575/mt_sd_misc.o
+  CC      drivers/misc/mediatek/sync/mtk_sync.o
+  CC      drivers/misc/mediatek/thermal/mtk_thermal_monitor.o
+  CC      drivers/misc/mediatek/thermal/mtk_cooler_shutdown.o
+  LD      drivers/misc/mediatek/sync/built-in.o
+  CC      drivers/misc/mediatek/thermal/mtk_cooler_backlight.o
+  CC      drivers/misc/mediatek/thermal/mtk_cooler_kshutdown.o
+  CC      drivers/misc/mediatek/thermal/mtk_cooler_cam.o
+  CC      drivers/misc/mediatek/thermal/mtk_cooler_vrt.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_thermal_platform.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_ts_pa_thput.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_cooler_bcct.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_ts_wmt.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_ts_bts.o
+  CC      drivers/misc/mediatek/thermal/mt6575/mtk_ts_cpu.o
+  LD      drivers/misc/mediatek/thermal/mt6575/built-in.o
+  LD      drivers/misc/mediatek/thermal/built-in.o
+make: Выход из каталога `/home/iicux/build'

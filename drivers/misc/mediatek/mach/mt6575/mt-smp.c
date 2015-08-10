@@ -32,6 +32,8 @@
 
 #define SLAVE_JUMP_REG  (SYSRAM_BASE+0x34)
 
+// IICuX 10.08.2015 16:17:09 
+extern volatile int pen_release;
 
 #if 0
 #define CA15L_TYPEID 0x410FC0D0
