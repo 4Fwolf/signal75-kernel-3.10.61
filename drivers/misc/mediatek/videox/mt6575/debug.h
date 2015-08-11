@@ -31,44 +31,6 @@ void DBG_OnTriggerLcd(void);
 void DBG_OnTeDelayDone(void);
 void DBG_OnLcdDone(void);
 
-#include <linux/mmprofile.h>
-extern struct MTKFB_MMP_Events_t
-{
-    MMP_Event MTKFB;
-    MMP_Event CreateSyncTimeline;
-    MMP_Event PanDisplay;
-    MMP_Event SetOverlayLayer;
-    MMP_Event SetOverlayLayers;
-    MMP_Event SetMultipleLayers;
-    MMP_Event CreateSyncFence;
-    MMP_Event IncSyncTimeline;
-    MMP_Event SignalSyncFence;
-    MMP_Event TrigOverlayOut;
-    MMP_Event UpdateScreenImpl;
-    MMP_Event VSync;
-    MMP_Event UpdateConfig;
-    MMP_Event ConfigOVL;
-    MMP_Event ConfigAAL;
-    MMP_Event ConfigMemOut;
-    MMP_Event ScreenUpdate;
-    MMP_Event CaptureFramebuffer;
-    MMP_Event RegUpdate;
-    MMP_Event EarlySuspend;
-    MMP_Event DispDone;
-    MMP_Event DSICmd;
-    MMP_Event DSIIRQ;
-    MMP_Event EsdCheck;
-    MMP_Event WaitVSync;
-    MMP_Event LayerDump;
-    MMP_Event Layer[4];
-    MMP_Event OvlDump;
-    MMP_Event FBDump;
-    MMP_Event DSIRead;
-    MMP_Event GetLayerInfo;
-    MMP_Event LayerInfo[4];
-    MMP_Event IOCtrl;
-    MMP_Event Debug;
-} MTKFB_MMP_Events;
 
 #ifdef MTKFB_DBG
 #include "disp_drv_log.h"
@@ -149,8 +111,6 @@ static inline void dbg_print(int level, const char *fmt, ...)
 #define MSG(evt, fmt, args...)
 #define MSG_FUNC_ENTER()
 #define MSG_FUNC_LEAVE()
-void _debug_pattern(unsigned int mva, unsigned int va, unsigned int w, unsigned int h, unsigned int linepitch, unsigned int color, unsigned int layerid, unsigned int bufidx);
-bool get_ovl1_to_mem_on();
 
 #endif	/* MTKFB_DBG */
 

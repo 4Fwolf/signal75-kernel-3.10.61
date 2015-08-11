@@ -1,0 +1,79 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  HOSTCC  scripts/mod/file2alias.o
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CC      kernel/power/qos.o
+  CC      kernel/time/timekeeping.o
+  CC      kernel/power/main.o
+  CC      kernel/power/process.o
+  CC      kernel/time/ntp.o
+  CC      kernel/power/suspend.o
+  CC      kernel/time/clocksource.o
+  CC      kernel/power/earlysuspend.o
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      kernel/time/jiffies.o
+  CC      kernel/power/autosleep.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      kernel/time/timer_list.o
+  CC      kernel/power/fbearlysuspend.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      kernel/time/timeconv.o
+  CC      kernel/power/wakelock.o
+  CC      kernel/time/posix-clock.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      kernel/power/wakeup_reason.o
+  CC      kernel/time/alarmtimer.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      kernel/power/sbsuspend.o
+  CC      drivers/input/touchscreen/mediatek/tpd_init.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  LD      kernel/power/built-in.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  CC      kernel/time/clockevents.o
+  LD      drivers/input/touchscreen/mediatek/built-in.o
+  LD      drivers/input/touchscreen/built-in.o
+  LD      drivers/input/built-in.o
+  CC      drivers/irqchip/irq-gic.o
+  CC      kernel/time/tick-common.o
+  CC      kernel/time/sched_clock.o
+  LD      drivers/irqchip/built-in.o
+  CC      kernel/time/tick-oneshot.o
+  CC      kernel/time/tick-sched.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/accdet/accdet_drv.o
+  CHK     kernel/config_data.h
+  LD      kernel/time/built-in.o
+  LD      kernel/built-in.o
+make: Выход из каталога `/home/iicux/build'

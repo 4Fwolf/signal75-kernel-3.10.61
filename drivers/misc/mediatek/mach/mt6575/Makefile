@@ -71,9 +71,12 @@ ifeq ($(CONFIG_MTK_FPGA),y)
 obj-y += mt_idle.o
 endif
 #obj-y += mt_dcm.o
-obj-y += mt_clkmgr_common.o
-obj-y += mt_clkmgr.o
-obj-y += mt_clkbuf_ctl.o
+
+# IICuX 11.08.2015 20:47:38 
+#obj-y += mt_clkmgr_common.o
+#obj-y += mt_clkmgr.o
+#obj-y += mt_clkbuf_ctl.o
+
 #obj-y += mt_golden_setting.o
 #obj-y += sbchk_base.o
 obj-$(CONFIG_MTK_CCCI_EXT) += mtk_ccci_helper.o
@@ -84,7 +87,10 @@ obj-$(CONFIG_MTK_CCCI_EXT) += mtk_ccci_helper.o
 #
 #obj-y += mt_static_power.o
 #
-obj-y += mt_ptp.o
+
+# IICuX 11.08.2015 20:51:46 
+#obj-y += mt_ptp.o
+
 #obj-y += mt_ptp2.o
 ##obj-y += mssv.o
 #

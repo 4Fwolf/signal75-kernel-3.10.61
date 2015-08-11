@@ -3,9 +3,9 @@
 #include <linux/semaphore.h>
 #include <linux/slab.h>
 
-#include <mach/mt_typedefs.h>
+#include <disp_drv_platform.h>
 #include "mtkfb_console.h"
-#include "ddp_hal.h"
+
 
 // ---------------------------------------------------------------------------
 
@@ -211,46 +211,6 @@ MFC_STATUS MFC_Open(MFC_HANDLE *handle,
     *handle = ctxt;
 
     return MFC_STATUS_OK;
-}
-
-MFC_STATUS MFC_Open_Ex(MFC_HANDLE *handle,
-                            void *fb_addr,
-                            unsigned int fb_width,
-                            unsigned int fb_height,
-                            unsigned int fb_pitch,
-                            unsigned int fb_bpp,
-                            unsigned int fg_color,
-                            unsigned int bg_color)
-{
-
-     MFC_CONTEXT *ctxt = NULL;
-
-    if (NULL == handle || NULL == fb_addr) 
-        return MFC_STATUS_INVALID_ARGUMENT;
-
-    if (fb_bpp != 2)
-        return MFC_STATUS_NOT_IMPLEMENTED;  // only support RGB565
-
-    ctxt = kzalloc(sizeof(MFC_CONTEXT), GFP_KERNEL);
-    if (!ctxt) return MFC_STATUS_OUT_OF_MEMORY;
-
-//    init_MUTEX(&ctxt->sem);
-	sema_init(&ctxt->sem, 1);	
-    ctxt->fb_addr   = fb_addr;
-    ctxt->fb_width  = fb_pitch;
-    ctxt->fb_height = fb_height;
-    ctxt->fb_bpp    = fb_bpp;
-    ctxt->fg_color  = fg_color;
-    ctxt->bg_color  = bg_color;
-    ctxt->rows      = fb_height / MFC_FONT_HEIGHT;
-    ctxt->cols      = fb_width / MFC_FONT_WIDTH;
-	ctxt->font_width = MFC_FONT_WIDTH;
-	ctxt->font_height = MFC_FONT_HEIGHT;
-
-    *handle = ctxt;
-
-    return MFC_STATUS_OK;
-
 }
 
 

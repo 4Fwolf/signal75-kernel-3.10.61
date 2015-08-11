@@ -1,0 +1,140 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+#
+# configuration written to .config
+#
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  LD      drivers/input/touchscreen/mediatek/built-in.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  LD      drivers/input/touchscreen/built-in.o
+  CC      drivers/misc/mediatek/accdet/accdet_drv.o
+  LD      drivers/input/built-in.o
+  CC      drivers/misc/mediatek/accdet/mt6575/accdet.o
+  CC      drivers/misc/mediatek/auxadc/mt_auxadc.o
+  CC      drivers/misc/mediatek/auxadc/mt6575/mt_auxadc_hal.o
+  LD      drivers/misc/mediatek/auxadc/mt6575/built-in.o
+  CC      drivers/misc/mediatek/boot/mt6575/mt_boot.o
+  LD      drivers/misc/mediatek/accdet/mt6575/built-in.o
+  LD      drivers/misc/mediatek/accdet/built-in.o
+  CC      drivers/misc/mediatek/ccci_util/mt6575/ccci_off.o
+  LD      drivers/misc/mediatek/auxadc/built-in.o
+  CC      drivers/misc/mediatek/chip/mt_chip_common.o
+  LD      drivers/misc/mediatek/boot/mt6575/BOOT.o
+  LD      drivers/misc/mediatek/boot/mt6575/built-in.o
+  LD      drivers/misc/mediatek/boot/built-in.o
+  LD      drivers/misc/mediatek/ccci_util/mt6575/built-in.o
+  LD      drivers/misc/mediatek/ccci_util/built-in.o
+  LD      drivers/misc/mediatek/chip/CHIP_COMMON.o
+  LD      drivers/misc/mediatek/chip/built-in.o
+  CC      drivers/misc/mediatek/cqdma/cqdma.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_ovl.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_color.o
+  LD      drivers/misc/mediatek/cqdma/built-in.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_rdma.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_wdma.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_aal.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_pwm.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/dumchar.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_gamma.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dither.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/env.o
+  CC      drivers/misc/mediatek/eint/eint_drv.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dsi.o
+  CC      drivers/misc/mediatek/eint/mt6575/eint.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/DumChar.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dum-char/built-in.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/kd_flashlightlist.o
+  CC      drivers/misc/mediatek/eint/mt6575/eint_irq.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid2_part1.o
+  LD      drivers/misc/mediatek/eint/mt6575/built-in.o
+  LD      drivers/misc/mediatek/eint/built-in.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid2_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid2_part1.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid2_part2.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_module.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/sub_strobe.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_main_sid1_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_part_id.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/strobe_sub_sid1_part2.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/constant_flashlight/leds_strobe.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_main.o
+  LD      drivers/misc/mediatek/flashlight/src/mt6575/constant_flashlight/built-in.o
+  LD      drivers/misc/mediatek/flashlight/src/mt6575/built-in.o
+  LD      drivers/misc/mediatek/flashlight/src/built-in.o
+  CC      drivers/misc/mediatek/gpio/mt_gpio_core.o
+  CC      drivers/misc/mediatek/gpio/mt6575/mt_gpio_base.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_drv.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_path.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_config.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_debug.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_rds_parser.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_patch.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_dump.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_utils.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_link.o
+  CC      drivers/misc/mediatek/fmradio/core/fm_eint.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_lib.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_manager.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_irq.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_rds.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_cmd.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_mmp.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/ddp_misc.o
+  CC      drivers/misc/mediatek/dispsys/mt6575/display_recorder.o
+  CC      drivers/misc/mediatek/fmradio/mt6620/pub/mt6620_fm_config.o
+  CC      drivers/misc/mediatek/fmradio/dummy.o
+  LD      drivers/misc/mediatek/fmradio/mtk_fm_drv.o
+  LD      drivers/misc/mediatek/fmradio/built-in.o
+  CC      drivers/power/mediatek/battery_common.o
+  LD      drivers/misc/mediatek/dispsys/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dispsys/built-in.o
+  LD      drivers/power/mediatek/built-in.o
+  LD      drivers/power/built-in.o
+make: Выход из каталога `/home/iicux/build'

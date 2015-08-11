@@ -38,8 +38,11 @@
 //#include <asm/system.h>
 #include <linux/musb/musb_core.h>
 #include <linux/musb/musbhsdma.h>
-#ifdef CONFIG_OF
-//extern void __iomem	*USB_BASE;
+
+// IICuX 11.08.2015 21:04:14 
+//#ifdef CONFIG_OF
+#ifndef CONFIG_OF
+extern void __iomem	*USB_BASE;
 extern struct musb *mtk_musb;
 #endif
 

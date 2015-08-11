@@ -79,11 +79,12 @@ struct mtk_uart_setting {
 	int tx_trig;
 	int rx_trig;
 	unsigned long uart_base;
-#ifdef CONFIG_OF
+// IICuX 11.08.2015 20:59:35 
+//#ifdef CONFIG_OF
 	unsigned long uart_phys_base;
 
 	unsigned long irq_flags;
-#endif
+//#endif
 	u8 irq_num;
 	u8 irq_sen;
 	u8 set_bit;		/*APMCU_CG_SET0 */

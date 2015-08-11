@@ -24,6 +24,12 @@
 #include <mach/md32_ipi.h>
 #endif
 
+// IICuX 11.08.2015 20:00:47 
+#include <linux/io.h>
+#include <linux/of.h>
+#include <linux/of_address.h>
+#include <linux/of_gpio.h>
+
 spinlock_t		 mtk_gpio_lock;
 
 #ifdef CONFIG_MD32_SUPPORT

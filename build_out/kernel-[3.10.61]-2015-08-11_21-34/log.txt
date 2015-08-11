@@ -1,0 +1,191 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+  CHK     include/generated/utsrelease.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CC      kernel/power/qos.o
+  CC      kernel/power/main.o
+  CC      kernel/power/process.o
+  CC      kernel/power/suspend.o
+  CC      drivers/input/touchscreen/mediatek/mtk_tpd.o
+  CC      kernel/power/earlysuspend.o
+  CC      drivers/input/touchscreen/mediatek/tpd_button.o
+  CC      drivers/input/touchscreen/mediatek/tpd_calibrate.o
+  CC      kernel/power/autosleep.o
+  CC      drivers/input/touchscreen/mediatek/tpd_debug.o
+  CC      kernel/power/fbearlysuspend.o
+  CC      kernel/power/wakelock.o
+  CC      drivers/input/touchscreen/mediatek/tpd_default.o
+  CC      kernel/power/wakeup_reason.o
+  CC      drivers/input/touchscreen/mediatek/tpd_init.o
+  CC      drivers/input/touchscreen/mediatek/tpd_misc.o
+  CC      kernel/power/sbsuspend.o
+  CC      drivers/irqchip/irq-gic.o
+  CC      drivers/input/touchscreen/mediatek/tpd_setting.o
+  LD      kernel/power/built-in.o
+  LD      drivers/input/touchscreen/mediatek/built-in.o
+  LD      drivers/input/touchscreen/built-in.o
+  CC      kernel/time/timekeeping.o
+  LD      drivers/input/built-in.o
+  CC      kernel/time/ntp.o
+  LD      drivers/irqchip/built-in.o
+  CC      kernel/time/clocksource.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/accdet/accdet_drv.o
+  CC      drivers/misc/mediatek/accdet/mt6575/accdet.o
+  CC      kernel/time/jiffies.o
+  CC      kernel/time/timer_list.o
+  CC      drivers/misc/mediatek/accelerometer/accel.o
+  CC      kernel/time/timeconv.o
+  LD      drivers/misc/mediatek/accdet/mt6575/built-in.o
+  LD      drivers/misc/mediatek/accdet/built-in.o
+  CC      kernel/time/posix-clock.o
+  CC      kernel/time/alarmtimer.o
+  CC      drivers/misc/mediatek/accelerometer/accel_factory.o
+  CC      drivers/misc/mediatek/accelerometer/mc3410-new/mc3410.o
+  CC      kernel/time/clockevents.o
+  CC      kernel/time/tick-common.o
+  CC      kernel/time/sched_clock.o
+  CC      drivers/misc/mediatek/aee/common/dummy.o
+  CC      kernel/time/tick-oneshot.o
+  LD      drivers/misc/mediatek/aee/common/aee.o
+  LD      drivers/misc/mediatek/aee/common/built-in.o
+  LD      drivers/misc/mediatek/aee/built-in.o
+  CC      kernel/time/tick-sched.o
+  CC      drivers/misc/mediatek/alsps/alsps.o
+  LD      drivers/misc/mediatek/accelerometer/mc3410-new/built-in.o
+  LD      drivers/misc/mediatek/accelerometer/built-in.o
+  CC      drivers/misc/mediatek/alsps/alsps_factory.o
+  LD      kernel/time/built-in.o
+  CHK     kernel/config_data.h
+  LD      kernel/built-in.o
+  CC      drivers/misc/mediatek/alsps/aal_control.o
+  CC      drivers/misc/mediatek/alsps/cm36652-new/cm36652.o
+  CC      drivers/misc/mediatek/auxadc/mt_auxadc.o
+  CC      drivers/misc/mediatek/auxadc/mt6575/mt_auxadc_hal.o
+  LD      drivers/misc/mediatek/auxadc/mt6575/built-in.o
+  CC      drivers/misc/mediatek/boot/mt_boot_common.o
+  LD      drivers/misc/mediatek/auxadc/built-in.o
+  CC      drivers/misc/mediatek/boot_reason/mt_boot_reason.o
+  LD      drivers/misc/mediatek/alsps/cm36652-new/built-in.o
+  LD      drivers/misc/mediatek/boot_reason/BOOT_REASON.o
+  LD      drivers/misc/mediatek/alsps/built-in.o
+  LD      drivers/misc/mediatek/boot_reason/built-in.o
+  CC      drivers/misc/mediatek/chip/mt_chip_common.o
+  CC      drivers/misc/mediatek/ccci_util/mt6575/ccci_off.o
+  CC      drivers/misc/mediatek/boot/mt6575/mt_boot.o
+  LD      drivers/misc/mediatek/ccci_util/mt6575/built-in.o
+  LD      drivers/misc/mediatek/ccci_util/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_core.o
+  LD      drivers/misc/mediatek/chip/CHIP_COMMON.o
+  LD      drivers/misc/mediatek/chip/built-in.o
+  CC      drivers/misc/mediatek/cqdma/cqdma.o
+  LD      drivers/misc/mediatek/boot/mt6575/BOOT.o
+  LD      drivers/misc/mediatek/boot/mt6575/built-in.o
+  LD      drivers/misc/mediatek/boot/BOOT_COMMON.o
+  LD      drivers/misc/mediatek/boot/built-in.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/mtk_wcn_stub_alps.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/wmt_stp_exp.o
+  LD      drivers/misc/mediatek/cqdma/built-in.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/dumchar.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/wmt_detect.o
+  CC      drivers/misc/mediatek/dum-char/mt6575/env.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ctrl.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/sdio_detect.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/DumChar.o
+  LD      drivers/misc/mediatek/dum-char/mt6575/built-in.o
+  LD      drivers/misc/mediatek/dum-char/built-in.o
+  CC      drivers/misc/mediatek/eint/eint_drv.o
+  CC      drivers/misc/mediatek/connectivity/common_detect/wmt_detect_pwr.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_func.o
+  CC      drivers/misc/mediatek/eint/mt6575/eint.o
+  LD      drivers/misc/mediatek/connectivity/common_detect/built-in.o
+  CC      drivers/misc/mediatek/flashlight/src/mt6575/kd_flashlightlist.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_lib.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_conf.o
+  CC      drivers/misc/mediatek/eint/mt6575/eint_irq.o
+  LD      drivers/misc/mediatek/eint/mt6575/built-in.o
+  LD      drivers/misc/mediatek/eint/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_dbg.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_dev.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_alps.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_exp.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/wmt_plat_stub.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6620.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_idc.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/platform/alps/mtk_wcn_cmb_hw.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/osal.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/platform/alps/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/platform/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6628.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/wmt_ic_6630.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_dbg.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/stp_exp.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_uart.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/stp_core.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/psm_core.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/hif_sdio.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_sdio.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/core/btm_core.o
+  CC      drivers/power/mediatek/battery_meter.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/core/built-in.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_chrdev_gps.o
+  CC      drivers/power/mediatek/battery_common.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/stp_chrdev_bt.o
+  CC      drivers/power/mediatek/linear_charging.o
+  CC      drivers/misc/mediatek/connectivity/combo/common/linux/wmt_chrdev_wifi.o
+  CC      drivers/usb/gadget/udc-core.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/linux/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/common/built-in.o
+  LD      drivers/misc/mediatek/connectivity/combo/built-in.o
+  LD      drivers/misc/mediatek/connectivity/built-in.o
+  CC      drivers/usb/gadget/android.o
+  CC      drivers/usb/gadget/usbstring.o
+  CC      drivers/usb/gadget/config.o
+  LD      drivers/power/mediatek/built-in.o
+  LD      drivers/power/built-in.o
+  CC      drivers/usb/gadget/epautoconf.o
+  CC      drivers/usb/gadget/composite.o
+  CC      drivers/usb/gadget/functions.o
+  CC      drivers/usb/gadget/configfs.o
+  CC      drivers/usb/gadget/f_acm.o
+  CC      drivers/usb/gadget/f_serial.o
+  CC      drivers/usb/gadget/u_serial.o
+  LD      drivers/usb/gadget/libcomposite.o
+  LD      drivers/usb/gadget/usb_f_serial.o
+  LD      drivers/usb/gadget/usb_f_acm.o
+  LD      drivers/usb/gadget/g_android.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+make: Выход из каталога `/home/iicux/build'

@@ -58,16 +58,6 @@ MFC_STATUS MFC_Open(MFC_HANDLE *handle,
                     unsigned int fg_color,
                     unsigned int bg_color);
 
-MFC_STATUS MFC_Open_Ex(MFC_HANDLE *handle,
-                            void *fb_addr,
-                            unsigned int fb_width,
-                            unsigned int fb_height,
-                            unsigned int fb_pitch,
-                            unsigned int fb_bpp,
-                            unsigned int fg_color,
-                            unsigned int bg_color);
-
-
 MFC_STATUS MFC_Close(MFC_HANDLE handle);
 
 MFC_STATUS MFC_SetColor(MFC_HANDLE handle,

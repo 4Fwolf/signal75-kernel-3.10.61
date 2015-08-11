@@ -6,7 +6,7 @@
 #include <linux/notifier.h>
 #include <linux/aee.h>
 #include <linux/mtk_ram_console.h>
-//#include <asm/mach/irq.h>
+#include <asm/mach/irq.h>
 //#include <asm/hardware/gic.h>
 #include <linux/irqchip/arm-gic.h>
 #include <linux/of.h>

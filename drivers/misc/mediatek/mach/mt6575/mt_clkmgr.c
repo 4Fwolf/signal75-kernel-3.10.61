@@ -3935,7 +3935,9 @@ static void mt_clks_init(void)
 }
 
 //#endif //#ifndef Bring_Up
-#ifdef CONFIG_OF
+// IICuX 11.08.2015 20:44:42 
+//#ifdef CONFIG_OF
+#ifndef CONFIG_OF
 void iomap(void)
 {
     struct device_node *node;

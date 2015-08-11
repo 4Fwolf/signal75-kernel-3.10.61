@@ -318,11 +318,19 @@ void _i2c_dump_info(mt_i2c *i2c)
       (__raw_readl(i2c->pdmabase+OFFSET_FLUSH)));
   }
 
-  if (i2c->dma_en) {
+  // IICuX 11.08.2015 20:06:25 
+  /*if (i2c->dma_en) {
     I2CLOG("AP_DMA global: 0x8: 0x%x, 0xC: 0x%x, 0x70: 0x%x\n", 
       __raw_readl(ap_dma_base + 0x08),
       __raw_readl(ap_dma_base + 0x0C),
       __raw_readl(ap_dma_base + 0x70));
+
+  }*/
+  if (i2c->dma_en) {
+    I2CLOG("AP_DMA global: 0x8: 0x%x, 0xC: 0x%x, 0x70: 0x%x\n", 
+      __raw_readl(0x08),
+      __raw_readl(0x0C),
+      __raw_readl(0x70));
 
   }
 

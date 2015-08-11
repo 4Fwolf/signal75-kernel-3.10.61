@@ -99,6 +99,7 @@ static const struct of_device_id apusb_of_ids[] = {
        { .compatible = "mediatek,USB0", },
        {},
 };
+#endif
 
 static struct platform_device mt_usb_device = {
 	.name	  ="mt_usb",
@@ -112,7 +113,6 @@ static struct platform_device usbacm_temp_device = {
 };
 #endif
 
-#endif
 MODULE_DEVICE_TABLE(of, apusb_of_ids);
 
 

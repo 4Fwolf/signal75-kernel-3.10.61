@@ -160,7 +160,9 @@ static const struct of_device_id apusb_of_ids[] = {
        { .compatible = "mediatek,USB0", },
        {},
 };
-//void __iomem	*USB_BASE;
+
+// IICuX 11.08.2015 21:04:14 
+void __iomem	*USB_BASE;
 
 module_param_named(speed, musb_speed, uint, S_IRUGO | S_IWUSR);
 MODULE_PARM_DESC(debug, "USB speed configuration. default = 1, high speed");

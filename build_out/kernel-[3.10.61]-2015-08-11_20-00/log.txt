@@ -1,0 +1,141 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/gpio/mt6575/mt_gpio_base.o
+  CC      drivers/misc/mediatek/gpio/mt6575/mt_gpio_ext.o
+  CC      drivers/misc/mediatek/gpio/mt6575/mt_gpio_affix.o
+  CC      drivers/misc/mediatek/gpio/mt6575/mt_gpio_debug.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_log.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_hal.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_bridge.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_profile_dvfs.o
+  LD      drivers/misc/mediatek/gpio/mt6575/built-in.o
+  LD      drivers/misc/mediatek/gpio/built-in.o
+  CC      drivers/misc/mediatek/gyroscope/gyroscope.o
+  CC      drivers/misc/mediatek/gyroscope/gyro_factory.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_monitor_3D_fence.o
+  CC      drivers/misc/mediatek/gpu/ged/src/ged_hashtable.o
+  CC      drivers/misc/mediatek/hwmon/batchsen/batch.o
+  LD      drivers/misc/mediatek/gpu/ged/ged.o
+  LD      drivers/misc/mediatek/gpu/ged/built-in.o
+  CC      drivers/misc/mediatek/gpu/hal/mtk_gpu_utility.o
+  LD      drivers/misc/mediatek/gyroscope/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/3rdparty/mtklfb/mtklfb_displayclass.o
+  LD      drivers/misc/mediatek/gpu/hal/hal.o
+  LD      drivers/misc/mediatek/gpu/hal/built-in.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_helper.o
+  LD      drivers/misc/mediatek/hwmon/batchsen/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/3rdparty/mtklfb/mtklfb_linux.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/3rdparty/mtklfb/mtklfb_debug.o
+  CC      drivers/misc/mediatek/hwmon/hwmsen/hwmsen_dev.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/osfunc.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mutils.o
+  LD      drivers/misc/mediatek/hwmon/hwmsen/built-in.o
+  LD      drivers/misc/mediatek/hwmon/built-in.o
+  CC      drivers/misc/mediatek/i2c/mt6575/i2c.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/kd_sensorlist.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mmap.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/module.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/pdump.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/proc.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/pvr_bridge_k.o
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/gc0310_yuv/gc0310_yuv_Sensor.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/pvr_debug.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/pvr_sync.o
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/imx179_mipi_raw/imx179mipiraw_Sensor.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/gc0310_yuv/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mm.o
+  CC      drivers/misc/mediatek/imgsensor/src/mt6575/ov5670_mipi_raw/ov5670mipi_Sensor.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/imx179_mipi_raw/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mutex.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/event.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/osperproc.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/buffer_manager.o
+  CC      drivers/usb/gadget/android.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/ov5670_mipi_raw/built-in.o
+  LD      drivers/misc/mediatek/imgsensor/src/mt6575/built-in.o
+  LD      drivers/misc/mediatek/imgsensor/src/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/devicemem.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/deviceclass.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/handle.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/hash.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/metrics.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/pvrsrv.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/queue.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/ra.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/resman.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/power.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/mem.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/pdump_common.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/bridged/bridged_support.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/bridged/bridged_pvr_bridge.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/perproc.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/lists.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/mem_debug.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/osfunc_common.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/bridged/sgx/bridged_sgx_bridge.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxinit.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxpower.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxreset.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxutils.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxkick.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/sgxtransfer.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/mmu.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/devices/sgx/pb.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mt657X/sysconfig.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mt657X/sysutils.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mtk_debug.o
+  LD      drivers/usb/gadget/libcomposite.o
+  LD      drivers/usb/gadget/usb_f_acm.o
+  LD      drivers/usb/gadget/usb_f_serial.o
+  LD      drivers/usb/gadget/g_android.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mtk_pp.o
+  LD      drivers/usb/gadget/built-in.o
+  LD      drivers/usb/built-in.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/env/linux/mtk_hal_mm.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/srvkm/common/ttrace.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mt657X/mtk_sysfreq.o
+  CC      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/services4/system/mtk_common/mtk_gpu_hal.o
+  LD      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/pvrsrvkm.o
+  LD      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/mtklfb.o
+  LD      drivers/misc/mediatek/gpu/mt6575/SGX/pvr/built-in.o
+  LD      drivers/misc/mediatek/gpu/mt6575/SGX/built-in.o
+  LD      drivers/misc/mediatek/gpu/mt6575/built-in.o
+  LD      drivers/misc/mediatek/gpu/built-in.o
+make: Выход из каталога `/home/iicux/build'

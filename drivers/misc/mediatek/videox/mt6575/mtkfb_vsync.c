@@ -2,7 +2,7 @@
 #include <linux/mm.h>
 #include <linux/mm_types.h>
 #include <linux/module.h>
-#include <generated/autoconf.h>
+#include <linux/autoconf.h>
 #include <linux/init.h>
 #include <linux/types.h>
 #include <linux/cdev.h>
@@ -23,14 +23,14 @@
 #include <linux/workqueue.h>
 #include <linux/semaphore.h>
 #include <linux/slab.h>
+#include <mach/irqs.h>
+#include <mach/mt_reg_base.h>
+#include <mach/mt_irq.h>
+#include <mach/mt_clock_manager.h>
 
 #include "mtkfb_vsync.h"
-#include "primary_display.h"
-#include <linux/xlog.h>
 
-#if defined(CONFIG_MTK_HDMI_SUPPORT)
-extern void hdmi_waitVsync(void);
-#endif
+#include <linux/xlog.h>
 
 #define VSYNC_DBG(...) xlog_printk(ANDROID_LOG_DEBUG, MTKFB_VSYNC_DEVNAME, __VA_ARGS__)
 
@@ -56,7 +56,6 @@ static struct class *mtkfb_vsync_class = NULL;
 DEFINE_SEMAPHORE(mtkfb_vsync_sem);
 
 extern void mtkfb_waitVsync(void);
-extern void mtkfb_disable_non_fb_layer(void);
 
 void mtkfb_vsync_log_enable(int enable)
 {
@@ -79,8 +78,6 @@ static ssize_t mtkfb_vsync_read(struct file *file, char __user *data, size_t len
 static int mtkfb_vsync_release(struct inode *inode, struct file *file)
 {
     VSYNC_DBG("driver release\n");
-    VSYNC_DBG("reset overlay engine\n");
-   // mtkfb_disable_non_fb_layer();
 	return 0;
 }
 
@@ -99,30 +96,12 @@ static long mtkfb_vsync_unlocked_ioctl(struct file *file, unsigned int cmd, unsi
         case MTKFB_VSYNC_IOCTL:
         {
 			MTKFB_VSYNC_LOG("[MTKFB_VSYNC]: enter MTKFB_VSYNC_IOCTL\n");
-			if(arg == MTKFB_VSYNC_SOURCE_HDMI)
-			{
-#if defined(CONFIG_MTK_HDMI_SUPPORT)
-                if (down_interruptible(&mtkfb_vsync_sem)) {
-         			printk("[mtkfb_vsync_ioctl] can't get semaphore,%d\n", __LINE__);
-    				msleep(20);
-         			return ret;
-        		}
-                hdmi_waitVsync();
-    			up(&mtkfb_vsync_sem);
-    			MTKFB_VSYNC_LOG("[MTKFB_VSYNC]: leave MTKFB_VSYNC_IOCTL, %d\n", __LINE__);
-#else
-                MTKFB_VSYNC_LOG("[MTKFB_VSYNC]: NS leave MTKFB_VSYNC_IOCTL, %d\n", __LINE__);
-                ret = -EFAULT;
-#endif                
-                return ret;
-			}
-			
 			if (down_interruptible(&mtkfb_vsync_sem)) {
      			printk("[mtkfb_vsync_ioctl] can't get semaphore,%d\n", __LINE__);
 				msleep(20);
      			return ret;
     		}
-            primary_display_wait_for_vsync(NULL);
+            mtkfb_waitVsync();
 			up(&mtkfb_vsync_sem);
 			MTKFB_VSYNC_LOG("[MTKFB_VSYNC]: leave MTKFB_VSYNC_IOCTL\n");
         }
@@ -166,6 +145,8 @@ static int mtkfb_vsync_probe(struct platform_device *pdev)
     class_dev = (struct class_device *)device_create(mtkfb_vsync_class, NULL, mtkfb_vsync_devno, NULL, MTKFB_VSYNC_DEVNAME);
 
     VSYNC_INF("probe is done\n");
+
+    NOT_REFERENCED(class_dev);
     return 0;
 }
 
@@ -252,8 +233,8 @@ static void __exit mtkfb_vsync_exit(void)
     VSYNC_INF("exit driver...\n");
 }
 
-//module_init(mtkfb_vsync_init);
-//module_exit(mtkfb_vsync_exit);
+module_init(mtkfb_vsync_init);
+module_exit(mtkfb_vsync_exit);
 
 MODULE_DESCRIPTION("MediaTek FB VSYNC Driver");
 MODULE_AUTHOR("Zaikuo Wang <Zaikuo.Wang@mediatek.com>");

@@ -1192,7 +1192,7 @@ Bit 31:28 ? {sot_reg, eol_reg, eot_reg, sof} , reg means status record
 Bit 27:24 ?{eot, eol,eot, req}
 Bit 23 : rdy
 
-Rdy should be 1    at idle or end of tile, if not 0, 很可能是mdp 沒回rdy
+Rdy should be 1    at idle or end of tile, if not 0, \AB雈i\AF\E0\ACOmdp \A8S\A6^rdy
 Req  should be 0   at idle or end of tile
 
 sot_reg, eol_reg, eot_reg should be 1  at idle or end of tile
@@ -1203,7 +1203,7 @@ pix count  :  bit 15:0
 
 
 2. 0x4044 / 0x4048 status
-      It is 無須 enable,
+      It is \B5L\B6\B7 enable,
 It is clear by 0x4020[31] write or read clear,
 It has many information on it,
 You can look coda
@@ -5779,16 +5779,17 @@ static MINT32 ISP_probe(struct platform_device *pDev)
     ISP_probe_FrmB();
     //
 
+    // IICuX 11.08.2015 20:25:28 
     // Request CAM_ISP IRQ
-    #ifndef CONFIG_OF 
-    if (request_irq(CAMERA_ISP_IRQ0_ID, (irq_handler_t)ISP_Irq, IRQF_TRIGGER_LOW , "isp", NULL))
-//    if (request_irq(CAMERA_ISP_IRQ0_ID, (irq_handler_t)ISP_Irq, IRQF_TRIGGER_HIGH, "isp", NULL))
-    {
-        LOG_ERR("MT_CAM_IRQ_LINE IRQ LINE NOT AVAILABLE!!");
-        goto EXIT;
-    }
+    //#ifndef CONFIG_OF 
+    //if (request_irq(CAMERA_ISP_IRQ0_ID, (irq_handler_t)ISP_Irq, IRQF_TRIGGER_LOW , "isp", NULL))
+    //if (request_irq(CAMERA_ISP_IRQ0_ID, (irq_handler_t)ISP_Irq, IRQF_TRIGGER_HIGH, "isp", NULL))
+    //{
+    //    LOG_ERR("MT_CAM_IRQ_LINE IRQ LINE NOT AVAILABLE!!");
+    //    goto EXIT;
+    //}
     //mt_irq_unmask(CAMERA_ISP_IRQ0_ID);
-    #endif
+    //#endif
     //
 
 //#endif

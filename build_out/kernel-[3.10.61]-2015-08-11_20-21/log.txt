@@ -1,0 +1,81 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+  CC      drivers/misc/mediatek/irq/mt6575/irq.o
+  CC      drivers/misc/mediatek/keypad/kpd.o
+  CC      drivers/misc/mediatek/kernel/sec_osal.o
+  LD      drivers/misc/mediatek/kernel/built-in.o
+  CC      drivers/misc/mediatek/lcm/mt65xx_lcm_list.o
+  LD      drivers/misc/mediatek/irq/mt6575/built-in.o
+  LD      drivers/misc/mediatek/irq/built-in.o
+  CC      drivers/misc/mediatek/leds/leds_drv.o
+  CC      drivers/misc/mediatek/lcm/otm9608_qhd_dsi_cmd/otm9608_qhd_dsi_cmd.o
+  CC      drivers/misc/mediatek/keypad/mt6575/hal_kpd.o
+  LD      drivers/misc/mediatek/lcm/otm9608_qhd_dsi_cmd/built-in.o
+  LD      drivers/misc/mediatek/lcm/built-in.o
+  LD      drivers/misc/mediatek/lens/built-in.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u.o
+  CC      drivers/misc/mediatek/leds/mt6575/leds.o
+  LD      drivers/misc/mediatek/keypad/mt6575/built-in.o
+  LD      drivers/misc/mediatek/keypad/built-in.o
+  CC      drivers/misc/mediatek/mach/mt6575/core.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_mva.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_devs.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_pgtable.o
+  LD      drivers/misc/mediatek/leds/mt6575/built-in.o
+  LD      drivers/misc/mediatek/leds/built-in.o
+  CC      drivers/misc/mediatek/magnetometer/mag.o
+  CC      drivers/misc/mediatek/mach/mt6575/mt_gpt.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_hw.o
+  CC      drivers/misc/mediatek/mach/mt6575/ca7_timer.o
+  CC      drivers/misc/mediatek/magnetometer/mag_factory.o
+  AS      drivers/misc/mediatek/mach/mt6575/mt_hotplug.o
+  CC      drivers/misc/mediatek/mach/mt6575/innercache.o
+  CC      drivers/misc/mediatek/magnetometer/akm09911-new/akm09911.o
+  CC      drivers/misc/mediatek/m4u/mt6575/m4u_debug.o
+  CC      drivers/misc/mediatek/mach/mt6575/camera_isp.o
+  LD      drivers/misc/mediatek/m4u/mt6575/built-in.o
+  LD      drivers/misc/mediatek/m4u/built-in.o
+  CC      drivers/misc/mediatek/mlog/mlog_dump.o
+  CC      drivers/misc/mediatek/mlog/mlog_logger.o
+  LD      drivers/misc/mediatek/magnetometer/akm09911-new/built-in.o
+  LD      drivers/misc/mediatek/magnetometer/built-in.o
+  LD      drivers/misc/mediatek/mlog/mlog.o
+  LD      drivers/misc/mediatek/mlog/built-in.o
+make: Выход из каталога `/home/iicux/build'

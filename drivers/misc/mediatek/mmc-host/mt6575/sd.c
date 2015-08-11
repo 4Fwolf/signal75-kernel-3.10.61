@@ -88,7 +88,9 @@
 
 #include <mach/partition.h>
 
-#ifdef CONFIG_OF
+// IICuX 11.08.2015 20:43:49 
+//#ifdef CONFIG_OF
+#ifndef CONFIG_OF
 #include <linux/of.h>
 #include <linux/of_address.h>
 #include <linux/of_irq.h>
@@ -234,7 +236,8 @@ static unsigned int msdc_online_tuning(struct msdc_host   *host, unsigned fn, un
 #define MSDC_MAX_R_TIMEOUT_TUNE          (3)
 #define MSDC_MAX_POWER_CYCLE             (3)
 
-#ifdef CONFIG_OF
+// IICuX 11.08.2015 20:29:10 
+//#ifdef CONFIG_OF
 struct device_node *msdc_gpio_node = NULL;
 struct device_node *msdc_io_cfg_left_node = NULL;
 struct device_node *msdc_io_cfg_top_node = NULL;
@@ -257,7 +260,7 @@ void __iomem *msdc_topckgen_base;
 void __iomem *msdc_infracfg_base;
 
 static int cd_irq = 0;
-#endif
+//#endif
 
 #ifdef FPGA_PLATFORM
 #ifdef CONFIG_OF
@@ -10536,7 +10539,9 @@ int msdc_drv_pm_restore_noirq(struct device *device)
 }
 #endif
 
-#ifdef CONFIG_OF
+// IICuX 11.08.2015 20:38:24 
+//#ifdef CONFIG_OF
+#ifndef CONFIG_OF
 extern struct msdc_hw msdc0_hw;
 #if defined(CFG_DEV_MSDC1)
 extern struct msdc_hw msdc1_hw;

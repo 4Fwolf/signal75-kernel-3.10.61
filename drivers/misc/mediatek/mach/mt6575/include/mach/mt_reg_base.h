@@ -11,6 +11,9 @@
 
 // IICuX 10.08.2015 22:29:18 
 #define MMSYS2_CONFG_BASE 0xF20C0000
+// IICuX 11.08.2015 19:41:13 
+#define AP_CCIF_BASE 0xF1007000
+//#define MD_CCIF_BASE 0xF1020000
 
 // CCI400
 #define CCI400_BASE (0xF0390000)
@@ -265,7 +268,7 @@
 #define HAN_BASE (0xF3000000)
 
 // APB Module mmsys_config
-//#define MMSYS_CONFIG_BASE (0xF4000000)
+#define MMSYS_CONFIG_BASE (0xF4000000)
 
 // APB Module mdp_rdma
 //#define MDP_RDMA0_BASE (0xF4001000)
@@ -510,7 +513,7 @@
 
 //Marcos add for early porting
 #define SYSRAM_BASE (0xF9000000)
-//#define GIC_DIST_BASE (CA9_BASE + 0x1000)
+#define GIC_DIST_BASE (CA9_BASE + 0x1000)
 //#define GIC_CPU_BASE  (CA9_BASE + 0x2000)
 //#if defined(CONFIG_MTK_FPGA)
 // FPGA only

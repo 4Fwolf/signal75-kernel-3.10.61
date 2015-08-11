@@ -36,6 +36,11 @@
 #include <mach/mt_reg_base.h>
 #include <mach/irqs.h>
 #include <mach/reg_accdet.h>
+#include <mach/mt_pmic_feature_api.h>
+#include <mach/pmic_mt6329_sw_bank1.h>
+#include <mach/pmic_mt6329_hw_bank1.h>
+#include <mach/upmu_hw.h>
+#include <mach/mt_clock_manager.h>
 #include <accdet_custom.h>
 #include <accdet_custom_def.h>
 
@@ -56,7 +61,12 @@ IOCTL
 #define KEY_CALL	KEY_SEND
 #define KEY_ENDCALL	KEY_HANGEUL
 
-#define ACCDET_TIME_OUT 0x61A80 //400us
+//<2014/11/10-qus1. It can be answer a call when ring tone.
+#if defined(TINNO_ANDROID_S9091)
+#define KEY_ANSWER_CALL   KEY_PLAYPAUSE   //KEY_STOPCD  //KEY_CALL
+#endif
+//<2014/11/10-qus1
+
 /****************************************************
 globle ACCDET variables
 ****************************************************/
@@ -66,28 +76,32 @@ enum accdet_report_state
     NO_DEVICE =0,
     HEADSET_MIC = 1,
     HEADSET_NO_MIC = 2,
-    //HEADSET_ILEGAL = 3,
-    //DOUBLE_CHECK_TV = 4
+    DOUBLE_CHECK_TV = 3
 };
 
 enum accdet_status
 {
     PLUG_OUT = 0,
     MIC_BIAS = 1,
-    //DOUBLE_CHECK = 2,
-    HOOK_SWITCH = 2,
-    //MIC_BIAS_ILLEGAL =3,
-    //TV_OUT = 5,
-    STAND_BY =4
+    DOUBLE_CHECK = 2,
+    HOOK_SWITCH = 3,
+    TV_OUT = 4,
+    STAND_BY =5
 };
 
+//<2014/11/10-qus1. for ACC_ANSWER_CALL.
+#if defined(TINNO_ANDROID_S9091)
+char *accdet_status_string[6]=
+#else
 char *accdet_status_string[5]=
+#endif
+//>2014/11/10-qus1.
 {
     "Plug_out",
     "Headset_plug_in",
-    //"Double_check",
+    "Double_check",
     "Hook_switch",
-    //"Tvout_plug_in",
+    "Tvout_plug_in",
     "Stand_by"
 };
 
@@ -97,7 +111,7 @@ char *accdet_report_string[4]=
     "Headset_mic",
     "Headset_no_mic",
     //"HEADSET_illegal",
-   // "Double_check"
+    "Double_check"
 };
 
 enum hook_switch_result
@@ -107,11 +121,10 @@ enum hook_switch_result
     REJECT_CALL = 2
 };
 
-/*
+
 typedef enum
 {	
     TVOUT_STATUS_OK = 0,
     TVOUT_STATUS_ALREADY_SET,
     TVOUT_STATUS_ERROR,
 } TVOUT_STATUS;
-*/

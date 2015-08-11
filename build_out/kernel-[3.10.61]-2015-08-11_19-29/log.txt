@@ -1,0 +1,92 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+  CC      drivers/cpufreq/cpufreq_governor.o
+  CC      drivers/cpufreq/cpufreq_balance.o
+  CC      drivers/cpufreq/freq_table.o
+  LD      drivers/firmware/built-in.o
+  CC      drivers/gpio/devres.o
+  LD      arch/arm/lib/built-in.o
+  AS      arch/arm/lib/ashldi3.o
+  AS      arch/arm/lib/ashrdi3.o
+  AS      arch/arm/lib/backtrace.o
+  LD      drivers/gpio/built-in.o
+  AS      arch/arm/lib/call_with_stack.o
+  AS      arch/arm/lib/changebit.o
+  AS      arch/arm/lib/clear_user.o
+  AS      arch/arm/lib/clearbit.o
+  AS      arch/arm/lib/copy_from_user.o
+  AS      arch/arm/lib/copy_page.o
+  AS      arch/arm/lib/copy_to_user.o
+  AS      arch/arm/lib/csumipv6.o
+  AS      arch/arm/lib/csumpartial.o
+  AS      arch/arm/lib/csumpartialcopy.o
+  AS      arch/arm/lib/csumpartialcopyuser.o
+  AS      arch/arm/lib/delay-loop.o
+  CC      arch/arm/lib/delay.o
+  AS      arch/arm/lib/div64.o
+  AS      arch/arm/lib/findbit.o
+  AS      arch/arm/lib/getuser.o
+  AS      arch/arm/lib/io-readsb.o
+  AS      arch/arm/lib/io-readsl.o
+  AS      arch/arm/lib/io-readsw-armv4.o
+  AS      arch/arm/lib/io-writesb.o
+  AS      arch/arm/lib/io-writesl.o
+  AS      arch/arm/lib/io-writesw-armv4.o
+  AS      arch/arm/lib/lib1funcs.o
+  AS      arch/arm/lib/lshrdi3.o
+  AS      arch/arm/lib/memcpy.o
+  AS      arch/arm/lib/memchr.o
+  AS      arch/arm/lib/memmove.o
+  AS      arch/arm/lib/memset.o
+  AS      arch/arm/lib/memzero.o
+  AS      arch/arm/lib/muldi3.o
+  AS      arch/arm/lib/putuser.o
+  AS      arch/arm/lib/setbit.o
+  AS      arch/arm/lib/strchr.o
+  AS      arch/arm/lib/strrchr.o
+  AS      arch/arm/lib/testchangebit.o
+  AS      arch/arm/lib/testclearbit.o
+  AS      arch/arm/lib/testsetbit.o
+  AS      arch/arm/lib/ucmpdi2.o
+  AR      arch/arm/lib/lib.a
+make: Выход из каталога `/home/iicux/build'

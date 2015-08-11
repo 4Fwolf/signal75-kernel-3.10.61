@@ -5,6 +5,7 @@
 #include <linux/mmc/host.h>
 #include <mach/sync_write.h>
 #include <mach/mt_reg_base.h>
+#include <linux/semaphore.h>
 
 #ifdef CONFIG_EMMC_50_FEATURE
 /* Kernel support, but host not support*/
