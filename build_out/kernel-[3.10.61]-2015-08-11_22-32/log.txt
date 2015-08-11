@@ -1,0 +1,67 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+  CHK     include/generated/utsrelease.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/auxadc/mt_auxadc.o
+  CC      drivers/misc/mediatek/auxadc/mt6575/mt_auxadc_hal.o
+  CC      drivers/misc/mediatek/boot_reason/mt_boot_reason.o
+  LD      drivers/misc/mediatek/auxadc/mt6575/built-in.o
+  CC      drivers/mtd/mtdcore.o
+  LD      drivers/misc/mediatek/boot_reason/BOOT_REASON.o
+  LD      drivers/misc/mediatek/boot_reason/built-in.o
+  CC      drivers/mtd/mtdconcat.o
+  CC      drivers/mtd/mtdpart.o
+  CC      drivers/mtd/mtdchar.o
+  CC      drivers/mtd/mtd_blkdevs.o
+  CC      drivers/mtd/mtdblock.o
+  CC      drivers/mtd/chips/chipreg.o
+  LD      drivers/mtd/devices/built-in.o
+  LD      drivers/mtd/lpddr/built-in.o
+  LD      drivers/mtd/maps/built-in.o
+  CC      drivers/mtd/nand/nand_base.o
+  LD      drivers/mtd/chips/built-in.o
+  LD      drivers/mtd/onenand/built-in.o
+  LD      drivers/mtd/tests/built-in.o
+  LD      drivers/mtd/mtd.o
+  CC      drivers/mtd/nand/nand_bbt.o
+  CC      drivers/mtd/nand/nand_ecc.o
+  CC      drivers/mtd/nand/nand_ids.o
+  CC      drivers/mtd/nand/plat_nand.o
+  LD      drivers/mtd/nand/nand.o
+  LD      drivers/mtd/nand/built-in.o
+  LD      drivers/mtd/built-in.o
+make: Выход из каталога `/home/iicux/build'

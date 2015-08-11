@@ -513,6 +513,7 @@
 
 //Marcos add for early porting
 #define SYSRAM_BASE (0xF9000000)
+#define ACCDET_BASE 0xF1016000
 #define GIC_DIST_BASE (CA9_BASE + 0x1000)
 //#define GIC_CPU_BASE  (CA9_BASE + 0x2000)
 //#if defined(CONFIG_MTK_FPGA)

@@ -1,0 +1,54 @@
+**** Configuring / /kconfig / ****
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  GZIP    kernel/config_data.gz
+  CHK     kernel/config_data.h
+  UPD     kernel/config_data.h
+  CC      kernel/configs.o
+  LD      kernel/built-in.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/aee/common/dummy.o
+  LD      drivers/misc/mediatek/aee/mrdump/built-in.o
+  CC      drivers/mmc/core/debugfs.o
+  LD      drivers/misc/mediatek/aee/common/aee.o
+  LD      drivers/misc/mediatek/aee/common/built-in.o
+  LD      drivers/misc/mediatek/aee/built-in.o
+  CC      drivers/misc/mediatek/alsps/alsps.o
+  LD      drivers/mmc/core/mmc_core.o
+  LD      drivers/mmc/core/built-in.o
+  LD      drivers/mmc/built-in.o
+make: Выход из каталога `/home/iicux/build'

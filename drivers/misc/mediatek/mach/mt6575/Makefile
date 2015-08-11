@@ -16,7 +16,7 @@ ifneq ($(CONFIG_ARM64), y)
 obj-y := core.o
 #obj-y += timer.o
 obj-y += mt_devs.o
-#obj-y += mt_boot.o
+obj-y += mt_boot.o
 #obj-y += board.o
 obj-y += mt_gpt.o
 obj-y += ca7_timer.o

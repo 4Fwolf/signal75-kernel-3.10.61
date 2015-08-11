@@ -1,0 +1,79 @@
+**** Configuring / /kconfig / ****
+make: Цель `mediatek-configs' не требует выполнения команд.
+make: Вход в каталог `/home/iicux/build'
+scripts/kconfig/conf --silentoldconfig Kconfig
+make: Выход из каталога `/home/iicux/build'
+**** Building ****
+make: Вход в каталог `/home/iicux/build'
+  CHK     include/generated/uapi/linux/version.h
+Enter main function!
+The 0th param is: 
+/home/iicux/build/tools/dct/DrvGen
+The 1th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+The 2th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 3th param is: 
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/inc
+The 4th param is: 
+power_h
+begin to open log file!
+DCT gen no log file for AOSP!
+start to gen code!
+start to read workspace!
+/home/iicux/build/drivers/misc/mediatek/mach/mt6575/signal75/dct/dct/codegen.dws
+start to parse fig file!
+start to parse fig file!
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CHK     include/generated/utsrelease.h
+  CC      scripts/mod/devicetable-offsets.s
+  GEN     scripts/mod/devicetable-offsets.h
+  HOSTCC  scripts/mod/file2alias.o
+imgsensor drv by platform gc0310_yuv imx179_mipi_raw ov5670_mipi_raw
+make[1]: `include/generated/mach-types.h' не требует обновления.
+  CALL    scripts/checksyscalls.sh
+  HOSTLD  scripts/mod/modpost
+  CHK     include/generated/compile.h
+  CHK     kernel/config_data.h
+  CC      lib/nlattr.o
+"CONFIG_TRUSTONIC_TEE_SUPPORT = "
+  CC      drivers/misc/mediatek/accdet/mt6575/accdet.o
+  CC      lib/dynamic_queue_limits.o
+  CC      lib/strncpy_from_user.o
+  CC      lib/strnlen_user.o
+  CC      lib/argv_split.o
+  CC      lib/bug.o
+  CC      lib/cmdline.o
+  CC      lib/ctype.o
+  CC      lib/dec_and_lock.o
+  CC      lib/decompress.o
+  CC      lib/decompress_inflate.o
+  CC      lib/dump_stack.o
+  CC      lib/earlycpio.o
+  CC      lib/extable.o
+  CC      lib/flex_proportions.o
+  CC      lib/idr.o
+  CC      lib/int_sqrt.o
+  CC      lib/ioremap.o
+  CC      lib/irq_regs.o
+  CC      lib/is_single_threaded.o
+  CC      lib/klist.o
+  CC      lib/kobject.o
+  CC      lib/kobject_uevent.o
+  CC      lib/md5.o
+  CC      lib/plist.o
+  CC      lib/prio_heap.o
+  CC      lib/proportions.o
+  CC      lib/radix-tree.o
+  CC      lib/ratelimit.o
+  CC      lib/rbtree.o
+  CC      lib/reciprocal_div.o
+  CC      lib/rwsem-spinlock.o
+  CC      lib/sha1.o
+  CC      lib/show_mem.o
+  CC      lib/string.o
+  CC      lib/timerqueue.o
+  CC      lib/vsprintf.o
+  LD      lib/built-in.o
+  AR      lib/lib.a
+make: Выход из каталога `/home/iicux/build'
